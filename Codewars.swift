@@ -17,3 +17,12 @@ func circleOfNumbers(_ n: Int, _ fst: Int) -> Int {
 }
 
 //---------------------------------------------------
+
+/*
+Partial Word Searching
+*/
+func wordSearch(_ str:String, _ arr:[String]) -> [String] {
+  return arr.filter{ $0.lowercased().contains( str.lowercased())} != [] ? arr.filter{ $0.lowercased().contains( str.lowercased()) }  : ["Empty"] 
+}
+
+//---------------------------------------------------
