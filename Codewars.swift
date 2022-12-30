@@ -38,5 +38,14 @@ func add(_ n: Int) -> ((Int) -> Int) {
 
 //---------------------------------------------------
 
+/*
+Simple Fun #152: Invite More Women?
+*/
+
+func inviteMoreWomen(_ arr: [Int]) -> Bool {
+   arr.reduce(0, -) >= 0 ? false : true
+}
+
+//---------------------------------------------------
 
 
