@@ -96,3 +96,13 @@ func persistence(for num: Int) -> Int {
 
 //---------------------------------------------------
 
+/*
+Are they the "same"?
+*/
+
+func comp(_ a: [Int], _ b: [Int]) -> Bool {
+  a.map{$0 * $0}.sorted(by: <) == b.sorted(by: <) ? true : false 
+}
+
+//---------------------------------------------------
+
