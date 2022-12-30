@@ -26,3 +26,17 @@ func wordSearch(_ str:String, _ arr:[String]) -> [String] {
 }
 
 //---------------------------------------------------
+
+/*
+Functional Addition
+*/
+
+func add(_ n: Int) -> ((Int) -> Int) { 
+  func addOne (_ m: Int) -> Int {return n + m}
+  return addOne
+}
+
+//---------------------------------------------------
+
+
+
