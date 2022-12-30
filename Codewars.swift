@@ -106,3 +106,26 @@ func comp(_ a: [Int], _ b: [Int]) -> Bool {
 
 //---------------------------------------------------
 
+/*
+Valid Braces
+*/
+
+func validBraces(_ string:String) -> Bool {
+  
+  var stack = [Character]()
+  let mapBrackets : [Character: Character] = ["}":"{", ")":"(", "]":"["]
+  let openingBrackets = "([{"
+      for i in string {
+        if openingBrackets.contains(i) {
+          stack.append(i) 
+      } else if stack.last == mapBrackets[i] {
+           stack.popLast()
+      } else {
+          return false
+        }
+ }
+  return  stack.isEmpty 
+}
+
+//---------------------------------------------------
+
