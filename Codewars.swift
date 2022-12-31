@@ -129,3 +129,20 @@ func validBraces(_ string:String) -> Bool {
 
 //---------------------------------------------------
 
+/*
+Sum of Digits / Digital Root
+*/
+
+func digitalRoot(of number: Int) -> Int {
+  var num = String(number).compactMap{$0.wholeNumberValue}
+  var count = 0
+  var sum = 0
+  while count < 1 {
+    sum += num.reduce(0, +)
+    count += 1
+  }
+ return sum > 10 ?   String(sum).compactMap{$0.wholeNumberValue}.reduce(0, +) :  sum
+}
+
+//---------------------------------------------------
+
