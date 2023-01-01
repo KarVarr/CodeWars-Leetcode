@@ -68,6 +68,30 @@ func potatoes (_ p0: Int, _ w0: Int, _ p1: Int) -> Int {
 
 //---------------------------------------------------
 
+/*
+Counting in the Amazon
+*/
+
+func countArare(_ n: Int) -> String {
+  var str = [String]()
+  if n % 2 == 0 {
+    for _ in 0..<n / 2  {
+      str.append("adak")
+    }
+    
+  } else {
+    for _ in 0..<n / 2 + 1 {
+      str.append("adak")
+    }
+  }
+
+  n % 2 == 1 ? str[str.count - 1] = "anane" : nil
+  
+  return str.joined(separator: " ")
+}
+
+//---------------------------------------------------
+
 
 
 
