@@ -113,6 +113,15 @@ func balancedNumber(_ number: Int) -> String {
 
 //---------------------------------------------------
 
+/*
+Printer Errors
+*/
+
+func printerError(_ s: String) -> String {
+   "\(s.filter{!"abcdefghijklm".contains($0)}.count)/\(s.count)"
+}
+
+//---------------------------------------------------
 
 
 
