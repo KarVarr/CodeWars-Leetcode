@@ -92,6 +92,26 @@ func countArare(_ n: Int) -> String {
 
 //---------------------------------------------------
 
+/*
+Balanced Number (Special Numbers Series #1 )
+*/
+
+func balancedNumber(_ number: Int) -> String {
+  let arr = String(number).compactMap{$0.wholeNumberValue} 
+  var arrLeft = [Int]()
+  var arrRight = [Int]()
+ 
+  if arr.count % 2 == 0 {
+    arrLeft.append( arr.prefix(arr.count / 2 - 1).reduce(0, +) )  
+    arrRight.append( arr.suffix(arr.count / 2 - 1).reduce(0, +) )
+  } else {
+    arrLeft.append( arr.prefix(arr.count / 2 ).reduce(0, +)  )
+    arrRight.append( arr.suffix(arr.count / 2 ).reduce(0, +)  ) 
+  }
+  return arrLeft == arrRight ? "Balanced" : "Not Balanced"
+}
+
+//---------------------------------------------------
 
 
 
