@@ -123,6 +123,16 @@ func printerError(_ s: String) -> String {
 
 //---------------------------------------------------
 
+/*
+Sum of Minimums!
+*/
+
+func sumOfMinimums(_ numbers: [[Int]]) -> Int {
+  var minArr = numbers.map{$0.min()! }
+  return minArr.reduce(0, +) 
+}
+
+//---------------------------------------------------
 
 
 
