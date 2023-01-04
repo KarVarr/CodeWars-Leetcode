@@ -145,8 +145,27 @@ func disariumNumber(_ number: Int) -> String {
 
 //---------------------------------------------------
 
+/*
+Is It Negative Zero (-0)?
+*/
 
-//MARK: - 6kyu
+func isNegativeZero(_ n: Float) -> Bool {
+      String(n).isEqual(to: "-0.0") ?  true : false
+}
+
+//---------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+//MARK: - 6kyu  ====================================
 
 /*
 Persistent Bugger.
