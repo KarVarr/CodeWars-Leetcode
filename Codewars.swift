@@ -134,7 +134,16 @@ func sumOfMinimums(_ numbers: [[Int]]) -> Int {
 
 //---------------------------------------------------
 
+/*
+Disarium Number (Special Numbers Series #3)
+*/
 
+func disariumNumber(_ number: Int) -> String {
+  let num = String(number).compactMap{$0.wholeNumberValue}.enumerated().map{ pow(Double($1), Double($0 + 1 ) )  }.reduce(0, +) 
+  return Int(num) == number ? "Disarium !!" : "Not !!"
+}
+
+//---------------------------------------------------
 
 
 //MARK: - 6kyu
