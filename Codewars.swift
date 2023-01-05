@@ -181,6 +181,20 @@ func allNonConsecutive (_ arr: [Int]) -> [(Int, Int)] {
 
 //---------------------------------------------------
 
+/*
+Easy wallpaper
+*/
+
+func wallpaper(_ l: Double, _  w: Double,_  h: Double) -> String {
+    let numbers = ["zero", "one", "two", "three", "four", "five",
+               "six", "seven", "eight", "nine", "ten",
+               "eleven", "twelve", "thirteen", "fourteen", "fifteen",
+               "sixteen", "seventeen", "eighteen", "nineteen", "twenty"]
+    let num = Int ( (l * h * 2 + w * h * 2) * 1.15 / 5.2  )
+    return  l * w * h == 0.0 ? "zero" : numbers[num + 1]  
+}
+
+//---------------------------------------------------
 
 
 
