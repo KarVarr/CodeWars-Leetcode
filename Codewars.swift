@@ -165,8 +165,21 @@ func menFromBoys(_ arr: [Int]) -> [Int] {
 
 //---------------------------------------------------
 
+/*
+Find all non-consecutive numbers
+*/
 
+func allNonConsecutive (_ arr: [Int]) -> [(Int, Int)] {  
+  var array = [(Int, Int)]()
+  for i in 0..<arr.count - 1 {
+    if arr[i] + 1 != arr[i + 1] {
+      array.append( (i + 1, arr[i + 1]) )
+    }
+  }
+  return array
+}
 
+//---------------------------------------------------
 
 
 
