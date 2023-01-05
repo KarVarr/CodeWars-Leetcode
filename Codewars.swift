@@ -196,6 +196,30 @@ func wallpaper(_ l: Double, _  w: Double,_  h: Double) -> String {
 
 //---------------------------------------------------
 
+/*
+Simple Fun #74: Growing Plant
+*/
+
+func growingPlant(_ upSpeed: Int, _ downSpeed: Int, _ desiredHeight: Int) -> Int {
+  var day = 0
+  var  h = 0
+    while h <= desiredHeight {
+        h += upSpeed 
+        day += 1
+        if h <  desiredHeight {
+            h -= downSpeed
+        } else {
+            return day
+          }
+  }
+  return day
+}
+
+//---------------------------------------------------
+
+
+
+
 
 
 
