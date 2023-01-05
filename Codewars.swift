@@ -217,6 +217,23 @@ func growingPlant(_ upSpeed: Int, _ downSpeed: Int, _ desiredHeight: Int) -> Int
 
 //---------------------------------------------------
 
+/*
+Going to the cinema
+*/
+
+func movie(card: Double, ticket: Double, perc: Double) -> Int {
+var dayA = 0.0
+var dayB = card
+var q = 0.0 
+    while dayB.rounded(.up) >= dayA {
+        q += 1.0
+        dayA += ticket
+        dayB += ticket * pow(perc, q)
+  }
+  return Int(q)
+}
+
+//---------------------------------------------------
 
 
 
