@@ -155,6 +155,15 @@ func isNegativeZero(_ n: Float) -> Bool {
 
 //---------------------------------------------------
 
+/*
+Sort Out The Men From Boys
+*/
+
+func menFromBoys(_ arr: [Int]) -> [Int] {
+   Set(arr).filter { $0 % 2 == 0  }.sorted (by: <) + Set(arr).filter { $0 % 2 != 0  }.sorted (by: >)
+}
+
+//---------------------------------------------------
 
 
 
