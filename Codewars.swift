@@ -251,6 +251,16 @@ func numbersWithDigitInside(_ x: Int64, _ d: Int64) -> [Int64] {
 
 //---------------------------------------------------
 
+/*
+Euclidean distance in n dimensions
+*/
+
+func euclideanDistanceBetween(_ point1: [Double], and point2: [Double]) -> Double {
+  let sum = zip(point1, point2).map({ pow($0.0 - $0.1, 2.0) }).reduce(0.0,+)
+  return round(100*sqrt(sum)) / 100
+}
+
+//---------------------------------------------------
 
 
 
