@@ -235,6 +235,21 @@ var q = 0.0
 
 //---------------------------------------------------
 
+/*
+Numbers with this digit inside
+*/
+
+func numbersWithDigitInside(_ x: Int64, _ d: Int64) -> [Int64] {
+  let arr = d > x ? [0, 0, 0] : Array(d...x).filter { String($0).contains("\(d)") } 
+  
+  let count = Int64( arr.filter {$0 != 0}.count   )
+  let sum = Int64(arr.reduce(0, +) )
+  let product = Int64( arr.filter {$0 != 0}.reduce(1, *) ) == 1 ? 0 : Int64( arr.filter {$0 != 0}.reduce(1, *) )
+  
+  return [count ,sum, product ]
+}
+
+//---------------------------------------------------
 
 
 
