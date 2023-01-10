@@ -262,6 +262,17 @@ func euclideanDistanceBetween(_ point1: [Double], and point2: [Double]) -> Doubl
 
 //---------------------------------------------------
 
+/*
+Strong Number (Special Numbers Series #2) (Swift)
+*/
+
+func strongNumber(_ number: Int) -> String {
+    let num = String(number).compactMap{$0.wholeNumberValue}
+    let count = num.map{Array(1..<$0 + 1)}.map{$0.reduce(1, *)}.reduce(0, +)
+    return  count == number ? "STRONG!!!!" : "Not Strong !!"
+}
+
+//---------------------------------------------------
 
 
 
