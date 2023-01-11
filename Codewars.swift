@@ -285,6 +285,16 @@ func specialNumber(_ number: Int) -> String {
 
 //---------------------------------------------------
 
+/*
+Billiards triangle
+*/
+
+func pyramid(_ balls: Int) -> Int{
+    Int( (sqrt(Double(balls) * 8.0 + 1.0) - 1.0) / 2.0 )
+}
+
+//---------------------------------------------------
+
 
 
 
