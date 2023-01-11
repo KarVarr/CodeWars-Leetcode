@@ -274,6 +274,20 @@ func strongNumber(_ number: Int) -> String {
 
 //---------------------------------------------------
 
+/*
+Special Number (Special Numbers Series #5)
+*/
+
+func specialNumber(_ number: Int) -> String {
+  let arr = String(number).compactMap{$0.wholeNumberValue}.filter{$0 > 5 } 
+  return arr.isEmpty ?  "Special!!" : "NOT!!"
+}
+
+//---------------------------------------------------
+
+
+
+
 
 
 
