@@ -392,3 +392,19 @@ func digitalRoot(of number: Int) -> Int {
 
 //---------------------------------------------------
 
+/*
+Multiples of 3 or 5
+*/
+
+func solution(_ num: Int) -> Int {
+  let number = num < 1 ? 3 : num
+  let arr = [(1...number - 1).filter{ $0 % 5 == 0 } , (1...number - 1 ).filter{ $0 % 3 == 0 }]
+  return Set(arr.flatMap{$0}).reduce(0, +)
+}
+
+//---------------------------------------------------
+
+
+
+
+
