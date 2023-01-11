@@ -305,6 +305,15 @@ func lastChair(_ n: Int) -> Int {
 
 //---------------------------------------------------
 
+/*
+Stacked Balls - 2D
+*/
+
+func stackHeight2D(_ layers: Int) -> Double {
+   layers != 0 ? ( Double(layers - 1) * (sqrt(3.0) / 2.0)) + 1.0 : 0.0
+}
+
+//---------------------------------------------------
 
 
 
