@@ -404,6 +404,15 @@ func solution(_ num: Int) -> Int {
 
 //---------------------------------------------------
 
+/*
+CamelCase Method
+*/
+
+func camelCase(_ str: String) -> String {
+  return  str.capitalized.replacingOccurrences(of: " " , with: "" )
+}
+
+//---------------------------------------------------
 
 
 
