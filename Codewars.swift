@@ -414,6 +414,16 @@ func camelCase(_ str: String) -> String {
 
 //---------------------------------------------------
 
+/*
+Pyramid Array
+*/
+
+func pyramid(_ n: Int) -> [[Int]] {
+  var arr = (0...n).map{ Array(repeating: 1, count: $0 + 1 ) }
+  return n == 0 ? [] : arr.dropLast()
+}
+
+//---------------------------------------------------
 
 
 
