@@ -425,5 +425,24 @@ func pyramid(_ n: Int) -> [[Int]] {
 
 //---------------------------------------------------
 
+/*
+Write Number in Expanded Form
+*/
+
+func expandedForm(_ num: Int) -> String {
+  let arr = String(num).compactMap{$0.wholeNumberValue}
+  let expanded = arr.reversed().enumerated().map{ Double($1) * pow(10.0, Double($0)) }.reversed()  
+  return expanded.map{Int($0)}.filter { $0 != 0 }.map{String($0)}.joined(separator: " + ")
+}
+
+//---------------------------------------------------
+
+
+
+
+
+
+
+
 
 
