@@ -437,6 +437,15 @@ func expandedForm(_ num: Int) -> String {
 
 //---------------------------------------------------
 
+/*
+Doors in the school
+*/
+
+func doors(_ n: Int) -> Int {
+   Int( sqrt(Double(n)).rounded(.down)  )
+}
+
+//---------------------------------------------------
 
 
 
