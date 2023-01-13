@@ -447,7 +447,20 @@ func doors(_ n: Int) -> Int {
 
 //---------------------------------------------------
 
+/*
+Find The Parity Outlier
+*/
 
+
+func findOutlier(_ array: [Int]) -> Int {
+  let even = array.filter { $0 % 2 == 0 }
+  let odd = Array(Set(array).symmetricDifference(even))
+  guard even.count > 1 else {return even[0]}
+  
+  return odd[0]
+} 
+
+//---------------------------------------------------
 
 
 
