@@ -462,6 +462,16 @@ func findOutlier(_ array: [Int]) -> Int {
 
 //---------------------------------------------------
 
+/*
+Consecutive strings
+*/
+
+func longestConsec(_ strarr: [String], _ k: Int) -> String {
+    if strarr == [] || k > strarr.count || k == 0 {return  ""} 
+    return (0...strarr.count - k).map{strarr[$0..<$0 + k].reduce("", +)}.max(by: {$0.count < $1.count})!
+} 
+
+//---------------------------------------------------
 
 
 
