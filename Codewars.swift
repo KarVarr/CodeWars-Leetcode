@@ -487,6 +487,15 @@ func inArray(_ a1: [String], _ a2: [String]) -> [String] {
 
 //---------------------------------------------------
 
+/*
+Stop gninnipS My sdroW!
+*/
+
+func spinWords(in sentence: String) -> String {
+  sentence.components(separatedBy: " ").map{$0.count >= 5 ? String($0.reversed() ) : $0}.joined(separator:" ") 
+} 
+
+//---------------------------------------------------
 
 
 
