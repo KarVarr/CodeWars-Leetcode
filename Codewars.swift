@@ -473,6 +473,19 @@ func longestConsec(_ strarr: [String], _ k: Int) -> String {
 
 //---------------------------------------------------
 
+/*
+Which are in?
+*/
+
+func inArray(_ a1: [String], _ a2: [String]) -> [String] {
+  var arr = [String]()
+  for i in a1 {
+     a2.map{$0.contains(i) ? arr.append(i) : arr.append("NIL")} 
+  }
+  return Array( Set(arr.filter{$0 != "NIL"}).sorted() )
+} 
+
+//---------------------------------------------------
 
 
 
