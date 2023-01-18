@@ -497,6 +497,27 @@ func spinWords(in sentence: String) -> String {
 
 //---------------------------------------------------
 
+/*
+Bouncing Balls
+*/
+
+func bouncingBall(_ h: Double, _ bounce: Double, _ window: Double) -> Int {
+  if  h != 0 && bounce > 0 && bounce < 1 && window < h  {
+    var count = 1
+    var current = h * bounce
+    
+    while current > window {
+      current *= bounce
+      count += 2
+    }
+    return count
+  } else {
+      return -1 
+  }
+
+}
+
+//---------------------------------------------------
 
 
 
