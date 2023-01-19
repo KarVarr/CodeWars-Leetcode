@@ -519,5 +519,25 @@ func bouncingBall(_ h: Double, _ bounce: Double, _ window: Double) -> Int {
 
 //---------------------------------------------------
 
+/*
+Bit Counting
+*/
+
+func countBits(_ n: Int) -> Int {
+  var num = n
+  var number = [Int]()
+  while num != 0 {
+      if num % 2 == 0 {
+       number.append( 0 )
+       num /= 2
+      } else {
+        number.append( 1 )
+        num -= 1
+      }
+    }
+  return number.filter{$0 == 1}.count
+} 
+
+//---------------------------------------------------
 
 
