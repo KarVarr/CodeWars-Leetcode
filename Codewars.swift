@@ -540,4 +540,25 @@ func countBits(_ n: Int) -> Int {
 
 //---------------------------------------------------
 
+/*
+Two Sum
+*/
+
+class Solution {
+  static func twosum(numbers: [Double], target: Double) -> [Int] {
+    var sum = 0
+    var sum2 = 0
+    for i in 0..<numbers.count {
+      for j in 0..<numbers.count {
+        if numbers[Int(i)] + numbers[Int(j)] == target {
+          sum = Int(i)
+          sum2 = Int(j)
+        }
+      }
+    }
+   return [sum2, sum]
+  }
+}
+
+//---------------------------------------------------
 
