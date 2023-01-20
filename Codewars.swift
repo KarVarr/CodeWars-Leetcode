@@ -562,3 +562,21 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+Roman Numerals Encoder
+*/
+
+func solution(_ number:Int) -> String {
+ let rom = [
+   ["","I","II","III","IV","V","VI","VII","VIII","IX"],
+   ["","X","XX","XXX","XL","L","LX","LXX","LXXX","XC"],
+   ["","C","CC","CCC","CD","D","DC","DCC","DCCC","CM"],
+   ["","M","MM","MMM"]
+]
+  return  rom[3][Int(number / 1000 % 10)] + rom[2][Int(number / 100 % 10)] + rom[1][Int(number / 10 % 10)] + rom[0][Int(number  % 10)]
+}
+
+//---------------------------------------------------
+
+
+
