@@ -11,3 +11,14 @@ export function even_or_odd(n:number):string {
 }
 
 //---------------------------------------------------
+
+/*
+Reversed Words
+*/
+export function reverseWords(str: string): string {
+  return str.split(" ").reverse().join(" "); 
+}
+
+//---------------------------------------------------
+
+
