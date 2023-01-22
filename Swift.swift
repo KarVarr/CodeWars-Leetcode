@@ -578,5 +578,32 @@ func solution(_ number:Int) -> String {
 
 //---------------------------------------------------
 
+/*
+RGB To Hex Conversion
+*/
+
+func rgb(_ r: Int, _ g: Int, _ b: Int) -> String {
+  var arr = [r,g,b]
+  var hexArr = [Int]()
+    for i in arr {
+    if i > 255 {
+      hexArr.append(255)
+    } else if i < 0 {
+      hexArr.append(0)
+    } else {
+      hexArr.append(i)
+    }
+   }
+  
+    for i in hexArr {
+     hex += String(format: "%02X", i)
+    }
+    return hex
+} 
+
+//---------------------------------------------------
+
+
+
 
 
