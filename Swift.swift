@@ -585,6 +585,7 @@ RGB To Hex Conversion
 func rgb(_ r: Int, _ g: Int, _ b: Int) -> String {
   var arr = [r,g,b]
   var hexArr = [Int]()
+  var hex = ""
     for i in arr {
     if i > 255 {
       hexArr.append(255)
