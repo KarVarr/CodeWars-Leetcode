@@ -22,6 +22,15 @@ export function reverseWords(str: string): string {
 
 //---------------------------------------------------
 
+/*
+Invert values
+*/
+
+export function invert(array: number[]): number[] {
+   return array.map(value => value >= 0 ? value * -1 : Math.abs(value));
+}
+
+//---------------------------------------------------
 
 
 
@@ -36,3 +45,7 @@ export function reverseWords(str: string): string {
 }
 
 //---------------------------------------------------
+
+
+
+
