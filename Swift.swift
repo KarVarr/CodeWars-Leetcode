@@ -604,6 +604,19 @@ func rgb(_ r: Int, _ g: Int, _ b: Int) -> String {
 
 //---------------------------------------------------
 
+/*
+Give me a Diamond
+*/
+
+func diamond(_ size: Int) -> String? {
+ guard size % 2 == 1 else { return nil}
+  var str = ""
+  let row = size / 2 + 1
+  (1...size).map{let space = abs(row - $0); str += String(repeating: " ", count: space ) + String(repeating: "*", count: size - space * 2 ) + "\n"  }
+  return str 
+}
+
+//---------------------------------------------------
 
 
 
