@@ -42,6 +42,21 @@ export const otherAngle = (a: number, b: number): number => {
 
 //---------------------------------------------------
 
+/*
+Filter out the geese
+*/
+
+export function gooseFilter (birds: string[]): string[] {
+  const geese: string[] = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter(e => !geese.includes(e));
+}
+
+//---------------------------------------------------
+
+
+
+
+
 
 //7 kyu
 
