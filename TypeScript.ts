@@ -73,6 +73,17 @@ export function howManyLightsabersDoYouOwn(name?: any): number {
 
 //---------------------------------------------------
 
+/*
+Grasshopper - Debug sayHello
+*/
+
+export function sayHello(name: string): string {
+  return `Hello, ${name}`
+}
+
+//---------------------------------------------------
+
+
 
 
 
