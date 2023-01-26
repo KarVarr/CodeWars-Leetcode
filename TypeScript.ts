@@ -63,6 +63,15 @@ export function litres(time: number): number {
 
 //---------------------------------------------------
 
+/*
+How many lightsabers do you own?
+*/
+
+export function howManyLightsabersDoYouOwn(name?: any): number {
+    return name == "Zach" ? 18 : 0
+}
+
+//---------------------------------------------------
 
 
 
