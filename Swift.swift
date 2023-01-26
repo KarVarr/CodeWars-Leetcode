@@ -618,6 +618,26 @@ func diamond(_ size: Int) -> String? {
 
 //---------------------------------------------------
 
+/*
+Encrypt this!
+*/
+
+func encryptThis(text:String) -> String{
+  var solution = text.split(separator: " ").map {
+    var wordArr = $0.map{String($0)}
+    wordArr[0] = String(wordArr[0].unicodeScalars.first!.value) 
+    if wordArr.count > 2 {
+       wordArr.swapAt(1, wordArr.count-1)
+      }
+    return wordArr.joined()
+  }.joined(separator: " ")
+  return solution
+}
+
+//---------------------------------------------------
+
+
+
 
 
 
