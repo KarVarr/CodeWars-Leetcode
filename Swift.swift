@@ -639,5 +639,30 @@ func encryptThis(text:String) -> String{
 
 
 
+//MARK: - 5kyu
+
+
+
+/*
+Is my friend cheating?
+*/
+
+func removNb(_ n: Int) -> [(Int,Int)] {
+  let sum = (1...n).reduce(0, +) 
+  var arr = [(Int,Int)]()
+
+  for i in 1...n {
+    let num = (sum - i) / (i + 1)
+    if num < n && num * i == sum - num - i {
+      arr.append((i, num))
+    }
+  }
+  return arr
+} 
+
+
+//---------------------------------------------------
+
+
 
 
