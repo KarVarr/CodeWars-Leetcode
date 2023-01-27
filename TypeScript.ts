@@ -91,6 +91,15 @@ export const booleanToString = (b:boolean):string =>  b == true ? "true" : "fals
 
 //---------------------------------------------------
 
+/*
+Powers of 2
+*/
+
+export function powersOfTwo(n:number):number[]{
+  return [...Array(n+1).keys()].map(i => 2 ** i);
+}
+
+//---------------------------------------------------
 
 
 
