@@ -636,6 +636,28 @@ func encryptThis(text:String) -> String{
 
 //---------------------------------------------------
 
+/*
+1RM Calculator
+*/
+
+func calculate1RM(_ weight: Int, _ reps: Int) -> Int? {
+  let eplay = Double(weight) * (1.0  + Double(reps) / 30.0)
+  let mcGlothin = (Double(100) * Double(weight)) / (101.3 - 2.67123 * Double(reps) )
+  let lombardi = Double(weight) * (pow(Double(reps), 0.10))
+  
+  let sum = [ round(Double(eplay)), round(Double(mcGlothin)), round(Double(lombardi)) ]
+
+  if weight <= 1  && reps == 0 {
+    return nil
+  } else if reps == 1 {
+    return weight
+  } else {
+   return Int(sum.max()!)
+  }
+
+}
+
+//---------------------------------------------------
 
 
 
