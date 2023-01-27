@@ -83,6 +83,13 @@ export function sayHello(name: string): string {
 
 //---------------------------------------------------
 
+/*
+Convert a Boolean to a String
+*/
+
+export const booleanToString = (b:boolean):string =>  b == true ? "true" : "false"
+
+//---------------------------------------------------
 
 
 
