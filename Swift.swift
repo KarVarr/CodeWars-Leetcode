@@ -315,12 +315,25 @@ func stackHeight2D(_ layers: Int) -> Double {
 
 //---------------------------------------------------
 
+/*
+Minimum Perimeter of a Rectangle
+*/
+
+func minimumPerimeter(_ area: Int64) -> Int64 {
+  var num = Int64(round(sqrt(Double(area)) ) )
+  while area % num != 0 {
+    num -= 1
+  }
+  return (area / num * 2) + num + num 
+}
+
+//---------------------------------------------------
 
 
 
 
 
-//MARK: - 6kyu  ====================================
+//MARK: - 6kyu  ======================================
 
 /*
 Persistent Bugger.
@@ -661,7 +674,7 @@ func calculate1RM(_ weight: Int, _ reps: Int) -> Int? {
 
 
 
-//MARK: - 5kyu
+//MARK: - 5kyu ======================================
 
 
 
