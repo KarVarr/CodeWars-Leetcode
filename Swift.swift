@@ -672,6 +672,26 @@ func calculate1RM(_ weight: Int, _ reps: Int) -> Int? {
 
 //---------------------------------------------------
 
+/*
+Doubleton number
+*/
+
+func doubleton(_ num: Int) -> Int {
+     var number = num + 1 
+     while true {
+        let digits = Set(String(number).map { Int(String($0))! }) 
+        if digits.count == 2 { 
+            return number 
+        }
+        number += 1 
+    }
+}
+
+//---------------------------------------------------
+
+
+
+
 
 
 //MARK: - 5kyu ======================================
