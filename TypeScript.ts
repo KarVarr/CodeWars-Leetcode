@@ -101,6 +101,20 @@ export function powersOfTwo(n:number):number[]{
 
 //---------------------------------------------------
 
+/*
+Quarter of the year
+
+*/
+
+export function quarterOf(month: number): number {
+  return Math.ceil(month / 3);
+}
+
+//---------------------------------------------------
+
+
+
+
 
 
 //7 kyu
