@@ -329,6 +329,32 @@ func minimumPerimeter(_ area: Int64) -> Int64 {
 
 //---------------------------------------------------
 
+/*
+Fizz Buzz Cuckoo Clock
+*/
+
+func fizzBuzzCuckooClock(_ time: String) -> String {
+  let num = time.split(separator: ":").map{Int($0)!}
+  let cuckoo = num[0] == 0 ? 12 : num[0] > 12 ? num[0] - 12 : num[0]
+  
+  if num[1] == 0 {
+    return String(repeating: "Cuckoo-", count: cuckoo).split(separator: "-").joined(separator: " ")
+  } else if num[1] % 5 == 0 && num[1] % 3 == 0 {
+    if num[1] == 30 {
+       return "Cuckoo"
+    } else {
+       return  "Fizz Buzz"
+    }
+  } else if num[1] % 5 == 0 {
+    return  "Buzz"
+  } else if num[1] % 3 == 0 {
+    return "Fizz"
+  } else  {
+    return "tick"
+  }
+}
+
+//---------------------------------------------------
 
 
 
