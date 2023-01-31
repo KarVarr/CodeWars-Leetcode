@@ -147,7 +147,15 @@ export function repeatStr(n: number, s: string): string {
 
 //---------------------------------------------------
 
+/*
+Beginner - Reduce but Grow
+*/
 
+export function grow(arr: number[]): number {
+  return arr.reduce((a, b) => a * b, 1)
+}
+
+//---------------------------------------------------
 
 
 
