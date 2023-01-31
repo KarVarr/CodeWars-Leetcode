@@ -123,6 +123,18 @@ export function simpleMultiplication(num: number): number{
 
 //---------------------------------------------------
 
+/*
+Beginner Series #2 Clock
+*/
+
+export function past(h: number, m: number, s: number): number {
+  let houre = h * 3600000
+  let minute = m * 60000
+  let second = s * 1000
+  return houre + minute + second
+}
+
+//---------------------------------------------------
 
 
 
