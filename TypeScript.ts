@@ -179,6 +179,15 @@ export function humanYearsCatYearsDogYears(humanYears: number): [number, number,
 
 //---------------------------------------------------
 
+/*
+Function 2 - squaring an argument
+*/
+
+export const square = (s: number): number => s**2
+
+//---------------------------------------------------
+
+
 
 
 //7 kyu
