@@ -136,6 +136,19 @@ export function past(h: number, m: number, s: number): number {
 
 //---------------------------------------------------
 
+/*
+String repeat
+
+*/
+
+export function repeatStr(n: number, s: string): string {
+  return `${s.repeat(n)}`;
+}
+
+//---------------------------------------------------
+
+
+
 
 
 
