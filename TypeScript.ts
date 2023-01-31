@@ -157,6 +157,27 @@ export function grow(arr: number[]): number {
 
 //---------------------------------------------------
 
+/*
+added Cat years, Dog years
+*/
+
+export function humanYearsCatYearsDogYears(humanYears: number): [number, number, number] {
+  let cat: number = 0
+  let dog: number = 0
+  if (humanYears == 1 ) {
+    cat = 15
+    dog = 15
+  } else if (humanYears == 2) {
+    cat = 24
+    dog = 24
+  } else  {
+    cat = 24 + ((humanYears - 2) * 4)
+    dog = 24 + ((humanYears - 2) * 5)
+  }
+  return [humanYears,cat,dog];
+}
+
+//---------------------------------------------------
 
 
 
