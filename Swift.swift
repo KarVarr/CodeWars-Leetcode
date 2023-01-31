@@ -356,6 +356,21 @@ func fizzBuzzCuckooClock(_ time: String) -> String {
 
 //---------------------------------------------------
 
+/*
+Moves in squared strings (I)
+*/
+
+func horMirror(_ s: String) -> String {
+    s.split(separator: "\n").reversed().joined(separator: "\n")
+}
+func vertMirror(_ s: String) -> String {
+   s.split(separator: "\n").map{String($0.reversed())}.joined(separator: "\n")
+}
+ func oper(_ fct: (String) -> String ,_ s: String) -> String {
+  return fct(s)
+} 
+
+//---------------------------------------------------
 
 
 
