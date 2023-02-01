@@ -769,6 +769,24 @@ func duplicateEncode(_ word: String) -> String {
 
 //---------------------------------------------------
 
+/*
+Mexican Wave
+*/
+
+func wave(_ y: String) -> [String] {
+  var str = [String]()
+  
+  for (i, v) in y.enumerated() {
+    if v == " " {continue}
+    var wave = Array(y)
+    wave[i] = Character(wave[i].uppercased())  
+    str.append(String(wave))
+  }
+ 
+  return str
+}
+
+//---------------------------------------------------
 
 
 
