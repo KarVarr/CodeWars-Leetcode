@@ -748,6 +748,26 @@ func digPow(for number: Int, using power: Int) -> Int {
 
 //---------------------------------------------------
 
+/*
+Duplicate Encoder
+*/
+
+func duplicateEncode(_ word: String) -> String {
+  let arr = word.lowercased()
+  var str = [Character: Int]()
+  
+  for i in arr {
+    if let count = str[i] {
+      str[i] = count + 1
+    } else {
+      str[i] = 1 
+    }
+  }
+
+  return arr.map{str[$0]! > 1 ? ")" : "("}.joined()
+}
+
+//---------------------------------------------------
 
 
 
