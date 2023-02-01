@@ -12,4 +12,13 @@ int multiply(int a, int b) {
 
 //---------------------------------------------------
 
+/*
+Function 1 - hello world
+*/
+
+NSString* greet () {
+  return @"hello world!";
+}
+
+//---------------------------------------------------
 
