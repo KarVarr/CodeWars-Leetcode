@@ -730,6 +730,23 @@ func doubleton(_ num: Int) -> Int {
 
 //---------------------------------------------------
 
+/*
+Playing with digits
+*/
+
+func digPow(for number: Int, using power: Int) -> Int {
+  let num = String(number).compactMap{$0.wholeNumberValue}
+  let powew = num.enumerated().map{pow(Double($1),Double($0 + power))}
+  let sum = Int(powew.reduce(0, +))
+ 
+  if sum % number > 1 {
+    return -1
+  } else {
+    return sum / number
+  }
+}
+
+//---------------------------------------------------
 
 
 
