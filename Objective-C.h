@@ -32,6 +32,18 @@ NSString* evenOrOdd (NSInteger n){
 
 //---------------------------------------------------
 
+/*
+ Beginner Series #2 Clock
+*/
+
+int past(int h, int m, int s) {
+  int houre = h * 3600000;
+  int minute  = m * 60000;
+  int second = s * 1000;
+  return houre + minute  + second;
+}
+
+//---------------------------------------------------
 
 
 
