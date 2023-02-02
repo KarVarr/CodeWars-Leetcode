@@ -197,6 +197,19 @@ export function seatsInTheater(nCols: number, nRows: number, col: number, row: n
 
 //---------------------------------------------------
 
+/*
+Find Maximum and Minimum Values of a List
+*/
+
+export const min = (list: number[]): number => {
+  return Math.min(...list)
+};
+
+export const max = (list: number[]): number => {
+  return Math.max(...list)
+};
+
+//---------------------------------------------------
 
 
 
