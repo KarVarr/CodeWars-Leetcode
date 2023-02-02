@@ -187,6 +187,19 @@ export const square = (s: number): number => s**2
 
 //---------------------------------------------------
 
+/*
+Simple Fun #1: Seats in Theater
+*/
+
+export function seatsInTheater(nCols: number, nRows: number, col: number, row: number) {
+  return (nCols - col) * (nRows - row) + (nRows - row)
+}
+
+//---------------------------------------------------
+
+
+
+
 
 
 
