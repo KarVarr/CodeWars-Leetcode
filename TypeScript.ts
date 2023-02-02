@@ -211,6 +211,15 @@ export const max = (list: number[]): number => {
 
 //---------------------------------------------------
 
+/*
+altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+*/
+
+export function toAlternatingCase(s: string): string {
+  return Array.from(s).map(i => i == i.toUpperCase() ? i.toLowerCase() : i.toUpperCase()  ).join("");
+}
+
+//---------------------------------------------------
 
 
 
