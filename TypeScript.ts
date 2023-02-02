@@ -221,6 +221,15 @@ export function toAlternatingCase(s: string): string {
 
 //---------------------------------------------------
 
+/*
+Convert a String to a Number!
+*/
+
+export function stringToNumber(str: string): number {
+  return Number(str)
+}
+
+//---------------------------------------------------
 
 
 
