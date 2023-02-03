@@ -231,6 +231,15 @@ export function stringToNumber(str: string): number {
 
 //---------------------------------------------------
 
+/*
+String Templates - Bug Fixing #5
+*/
+
+export function buildString(... template:string[]):string {
+  return `I like ${template.join(', ')}!`
+}
+
+//---------------------------------------------------
 
 
 
