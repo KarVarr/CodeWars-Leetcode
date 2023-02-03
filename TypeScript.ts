@@ -291,6 +291,16 @@ export function lovefunc(flower1: number, flower2: number): boolean {
 
 //---------------------------------------------------
 
+/*
+Remove First and Last Character
+*/
+
+export function removeChar(str: string): string {
+  return str.slice(1, str.length - 1)
+}
+
+
+//---------------------------------------------------
 
 
 
