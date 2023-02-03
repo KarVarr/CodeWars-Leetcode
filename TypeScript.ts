@@ -251,6 +251,15 @@ export function bmi(weight: number, height: number): string {
 
 //---------------------------------------------------
 
+/*
+Basic variable assignment
+*/
+
+var a = "code";
+var b = "wa.rs";
+export var name = a + b;
+
+//---------------------------------------------------
 
 
 
