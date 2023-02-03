@@ -261,6 +261,15 @@ export var name = a + b;
 
 //---------------------------------------------------
 
+/*
+Grasshopper - Basic Function Fixer
+*/
+
+export const addFive = (num : number) : number => {
+  return num  + 5;
+}
+
+//---------------------------------------------------
 
 
 
