@@ -804,16 +804,25 @@ func race(_ v1: Int, _ v2: Int, _ g: Int) -> [Int]? {
 //---------------------------------------------------
 
 /*
-Tortoise racing
+Rectangle into Squares
 */
 
-func race(_ v1: Int, _ v2: Int, _ g: Int) -> [Int]? {
-  guard v1 <= v2 else {return nil}
-  let sum = g * 3600 / (v2 - v1 )
-  let hours = sum / 3600
-  let minutes = sum % 3600 / 60
-  let seconds = sum % 60
-  return [hours,minutes,seconds]
+func sqInRect(_ lng: Int, _ wdth: Int) -> [Int]? {
+  guard lng != wdth else {return nil}
+  
+  var result = [Int]()
+    var currentLength = lng
+    var currentWidth = wdth
+    while currentLength > 0, currentWidth > 0 {
+        if currentLength < currentWidth {
+            result.append(currentLength)
+            currentWidth -= currentLength
+        } else {
+            result.append(currentWidth)
+            currentLength -= currentWidth
+        }
+    }
+    return result
 }
 
 //---------------------------------------------------
