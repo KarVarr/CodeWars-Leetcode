@@ -313,6 +313,17 @@ export function abbrevName(name: string): string {
 
 //---------------------------------------------------
 
+/*
+My head is at the wrong end!
+*/
+
+export function fixTheMeerkat(arr: string[]): string[] {
+  return [arr[2], arr[1], arr[0]]
+}
+
+
+//---------------------------------------------------
+
 
 
 
