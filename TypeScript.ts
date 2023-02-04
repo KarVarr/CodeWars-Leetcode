@@ -302,6 +302,16 @@ export function removeChar(str: string): string {
 
 //---------------------------------------------------
 
+/*
+Abbreviate a Two Word Name
+*/
+
+export function abbrevName(name: string): string {
+    return name.split(" ").map(i => i.slice(0,1).toUpperCase() ).join(".") ;
+}
+
+
+//---------------------------------------------------
 
 
 
