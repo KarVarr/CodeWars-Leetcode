@@ -346,6 +346,20 @@ export function areYouPlayingBanjo(name: string): string {
 
 //---------------------------------------------------
 
+/*
+Alan Partridge II - Apple Turnover
+*/
+
+export function apple(x: number | string): string {
+    if (+x * +x > 1000) {
+    return "It's hotter than the sun!!";
+  } else {
+    return "Help yourself to a honeycomb Yorkie for the glovebox.";
+  }
+}
+
+
+//---------------------------------------------------
 
 
 
