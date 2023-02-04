@@ -361,6 +361,23 @@ export function apple(x: number | string): string {
 
 //---------------------------------------------------
 
+/*
+Basic Mathematical Operations
+*/
+
+export function basicOp(operation: string, value1: number, value2: number): number {
+  let sum = 0
+  switch (operation) {
+      case "+" : {sum = value1 + value2};break; 
+      case "-" : {sum = value1 - value2};break; 
+      case "*" : {sum = value1 * value2};break; 
+      case "/" : {sum = value1 / value2};break; 
+  }
+  return sum
+}
+
+
+//---------------------------------------------------
 
 
 
