@@ -324,6 +324,16 @@ export function fixTheMeerkat(arr: string[]): string[] {
 
 //---------------------------------------------------
 
+/*
+Will you make it?
+*/
+
+export const zeroFuel = (distance: number, mpg: number, fuelLeft: number): boolean => {
+  return fuelLeft * mpg >= distance ? true : false 
+};
+
+
+//---------------------------------------------------
 
 
 
