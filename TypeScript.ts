@@ -335,6 +335,23 @@ export const zeroFuel = (distance: number, mpg: number, fuelLeft: number): boole
 
 //---------------------------------------------------
 
+/*
+Are You Playing Banjo?
+*/
+
+export function areYouPlayingBanjo(name: string): string {
+  return name[0] == "R" || name[0] == "r" ? name + " plays banjo" : name + " does not play banjo"
+}
+
+
+//---------------------------------------------------
+
+
+
+
+
+
+
 
 
 //7 kyu ============================================
