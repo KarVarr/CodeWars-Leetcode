@@ -827,6 +827,28 @@ func sqInRect(_ lng: Int, _ wdth: Int) -> [Int]? {
 
 //---------------------------------------------------
 
+/*
+Message Validator
+*/
+
+func isAValidMessage(_ message: String) -> Bool {
+  var bool = true
+  let str = message.components(separatedBy: CharacterSet.decimalDigits).filter{$0 != ""}
+  let strFalse = message.components(separatedBy: CharacterSet.decimalDigits)
+  let num = message.components(separatedBy: CharacterSet.decimalDigits.inverted).filter{$0 != ""}.map{Int($0)!}
+
+  for i in 0..<str.count {
+    if str.count != num.count  || strFalse[0] != "" || str[i].count != num[i] {
+       bool = false
+    } else {
+        bool = true
+    }
+  }
+  
+  return bool
+}
+
+//---------------------------------------------------
 
 
 
