@@ -379,6 +379,15 @@ export function basicOp(operation: string, value1: number, value2: number): numb
 
 //---------------------------------------------------
 
+/*
+Count Odd Numbers below n
+*/
+
+export function oddCount(n: number){
+  return Math.floor(n / 2)
+}
+
+//---------------------------------------------------
 
 
 
