@@ -399,6 +399,15 @@ export function makeUpperCase(str: string): string{
 
 //---------------------------------------------------
 
+/*
+Return to Sanity
+*/
+
+export function mystery(): object {
+  return {sanity: 'Hello'};
+}
+
+//---------------------------------------------------
 
 
 
