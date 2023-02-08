@@ -409,6 +409,15 @@ export function mystery(): object {
 
 //---------------------------------------------------
 
+/*
+Find Multiples of a Number
+*/
+
+export function findMultiples(integer: number, limit: number): number[] {
+  return [...Array(limit + 1).keys()].filter(i => i % integer == 0).slice(1);
+}
+
+//---------------------------------------------------
 
 
 
