@@ -419,6 +419,20 @@ export function findMultiples(integer: number, limit: number): number[] {
 
 //---------------------------------------------------
 
+/*
+Parse nice int from char problem
+*/
+
+export function get_age(age: string): number {
+   return +age.split("").slice(0,1);
+}
+
+//---------------------------------------------------
+
+
+
+
+
 
 
 //7 kyu ============================================
