@@ -443,6 +443,15 @@ return formData
 
 //---------------------------------------------------
 
+/*
+Calculate average
+*/
+
+export function findAverage(array: number[]): number {
+  return array.length == 0 ? 0 : array.reduce((acc, i) => acc + i, 0) / array.length;
+}
+
+//---------------------------------------------------
 
 
 
