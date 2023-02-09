@@ -429,6 +429,19 @@ export function get_age(age: string): number {
 
 //---------------------------------------------------
 
+/*
+Safen User Input Part I - htmlspecialchars
+*/
+
+export function htmlspecialchars(formData: string): string {
+return formData
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+//---------------------------------------------------
 
 
 
