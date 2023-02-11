@@ -463,6 +463,15 @@ export function enough(cap: number, on: number, wait: number): number {
 
 //---------------------------------------------------
 
+/*
+Return Negative
+*/
+
+export const makeNegative = (num: number): number => {
+  return Math.sign(num) == 1 ? num * -1 : num
+};
+
+//---------------------------------------------------
 
 
 
