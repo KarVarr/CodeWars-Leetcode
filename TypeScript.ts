@@ -473,6 +473,27 @@ export const makeNegative = (num: number): number => {
 
 //---------------------------------------------------
 
+/*
+Thinkful - Logic Drills: Traffic light
+*/
+
+export function updateLight(current: string): string {
+  if (current == "green" ){
+    return "yellow"
+  } else if (current == "yellow"){
+    return "red"
+  } else {
+    return "green"
+  }
+}
+
+//---------------------------------------------------
+
+
+
+
+
+
 
 
 //7 kyu ============================================
