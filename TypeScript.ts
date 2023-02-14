@@ -490,7 +490,7 @@ export function updateLight(current: string): string {
 //---------------------------------------------------
 
 /*
-Twice as old
+How good are you really?
 */
 
 export function twiceAsOld(dadYearsOld: number, sonYearsOld: number): number {
@@ -499,6 +499,15 @@ export function twiceAsOld(dadYearsOld: number, sonYearsOld: number): number {
 
 //---------------------------------------------------
 
+/*
+Twice as old
+*/
+
+export function betterThanAverage(classPoints: number[], yourPoints: number) : boolean {
+  return  classPoints.reduce((a,b) => a + b, 0) / classPoints.length < yourPoints ?  true : false;
+}
+
+//---------------------------------------------------
 
 
 
