@@ -509,6 +509,15 @@ export function betterThanAverage(classPoints: number[], yourPoints: number) : b
 
 //---------------------------------------------------
 
+/*
+Beginner Series #4 Cockroach
+*/
+
+export function cockroachSpeed(s: number): number{
+  return s == 0 ? 0 : Math.floor(s * 1000 / 3600 * 100);
+}
+
+//---------------------------------------------------
 
 
 
