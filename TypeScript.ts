@@ -519,6 +519,23 @@ export function cockroachSpeed(s: number): number{
 
 //---------------------------------------------------
 
+/*
+I love you, a little , a lot, passionately ... not at all
+*/
+
+export function howMuchILoveYou(petals: number): string{
+ let phrases = [
+    "not at all",
+    "I love you",
+    "a little",
+    "a lot",
+    "passionately",
+    "madly",
+]
+  return phrases[petals % 6]
+}
+
+//---------------------------------------------------
 
 
 
