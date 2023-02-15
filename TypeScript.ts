@@ -537,6 +537,15 @@ export function howMuchILoveYou(petals: number): string{
 
 //---------------------------------------------------
 
+/*
+Is it even?
+*/
+
+export const testEven = (n : number) : boolean => {
+  return n % 2 == 0 ? true : false
+}
+
+//---------------------------------------------------
 
 
 
