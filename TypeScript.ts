@@ -573,6 +573,15 @@ export function checkAlive(health: number): boolean {
 
 //---------------------------------------------------
 
+/*
+Counting sheep...
+*/
+
+export function countSheeps(arrayOfSheep: (boolean | undefined | null)[]) {
+  return arrayOfSheep.filter(i => i == true).length
+}
+
+//---------------------------------------------------
 
 
 
