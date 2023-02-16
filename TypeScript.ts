@@ -557,6 +557,30 @@ export function noSpace(x:string):string {
 
 //---------------------------------------------------
 
+/*
+Grasshopper - If/else syntax debug
+*/
+
+export function checkAlive(health: number): boolean {
+  let  result: boolean
+    if ( health <= 0) {
+        result = false;
+    } else {
+        result = true;
+    }
+  return result
+}
+
+//---------------------------------------------------
+
+
+
+
+
+
+
+
+
 
 //7 kyu ============================================
 
