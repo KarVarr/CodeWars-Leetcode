@@ -583,6 +583,15 @@ export function countSheeps(arrayOfSheep: (boolean | undefined | null)[]) {
 
 //---------------------------------------------------
 
+/*
+All Star Code Challenge #18
+*/
+
+export function strCount(str: string, letter: string): number {
+  return str == "" ? 0 : Array.from(str).filter(i => i == letter).length
+}
+
+//---------------------------------------------------
 
 
 
