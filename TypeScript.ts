@@ -607,6 +607,16 @@ export function weatherInfo(temp: number): string {
 
 //---------------------------------------------------
 
+/*
+Type of sum
+*/
+
+export function typeOfSum(a:any, b:any):string {
+  let type = a + b
+  return `${typeof type}` 
+}
+
+//---------------------------------------------------
 
 
 
