@@ -658,6 +658,20 @@ export const xor=(a:boolean, b:boolean):boolean => {
 
 //---------------------------------------------------
 
+/*
+Holiday VIII - Duty Free
+*/
+
+export function dutyFree(normPrice: number, discount: number, hol: number): number{
+  return Math.floor(hol / (discount / 100 * normPrice) )
+}
+
+//---------------------------------------------------
+
+
+
+
+
 
 
 //7 kyu ============================================
