@@ -668,6 +668,15 @@ export function dutyFree(normPrice: number, discount: number, hol: number): numb
 
 //---------------------------------------------------
 
+/*
+The Wide-Mouthed frog!
+*/
+
+export function mouthSize(animal: string): string {
+  return animal.toLowerCase() == "alligator" ? "small" : "wide";
+}
+
+//---------------------------------------------------
 
 
 
