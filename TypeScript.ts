@@ -638,6 +638,25 @@ export function index(array: number[], n: number): number {
 
 //---------------------------------------------------
 
+/*
+Exclusive "or" (xor) Logical Operator
+*/
+
+export const xor=(a:boolean, b:boolean):boolean => {
+  let bool = true
+  if (a === true && b === true) {
+    bool = false
+  } else if (a === true && b === false) {
+    bool = true
+  } else if (a === false && b === true) {
+    bool = true
+  } else if (a === false && b === false) {
+    bool = false
+  }
+  return bool
+}
+
+//---------------------------------------------------
 
 
 
