@@ -708,6 +708,17 @@ export const arrayPlusArray = (arr1 : number[], arr2 : number[]) : number => {
 
 //---------------------------------------------------
 
+/*
+Do I get a bonus?
+*/
+
+export class Kata {
+    public static bonusTime(salary:number, bonus:boolean):string {
+      return bonus ? `£${salary * 10}` : `£${salary}`
+    }
+}
+
+//---------------------------------------------------
 
 
 
