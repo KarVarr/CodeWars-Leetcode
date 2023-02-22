@@ -698,6 +698,26 @@ export function paperwork(n: number, m :number): number{
 
 //---------------------------------------------------
 
+/*
+Array plus array
+*/
+
+export const arrayPlusArray = (arr1 : number[], arr2 : number[]) : number => {
+  return arr1.reduce((a, b) => a+b,0) + arr2.reduce((a, b) => a+b,0); 
+}
+
+//---------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 
 
 
