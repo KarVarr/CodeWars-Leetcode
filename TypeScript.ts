@@ -720,7 +720,17 @@ export class Kata {
 
 //---------------------------------------------------
 
+/*
+Find out whether the shape is a cube
+*/
 
+export function cubeChecker(volume: number, side: number): boolean{
+  let w = volume / (side * side)
+  let h = volume / (side * side)
+  return (w === side && h === side) ? true : false;
+}
+
+//---------------------------------------------------
 
 
 
