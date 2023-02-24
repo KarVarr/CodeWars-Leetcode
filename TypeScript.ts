@@ -816,6 +816,15 @@ export function setAlarm(employed: boolean, vacation: boolean) {
 
 //---------------------------------------------------
 
+/*
+Correct the mistakes of the character recognition software
+*/
+
+export function correct(s: string): string{
+ return s.replaceAll("0", 'O').replaceAll("5", 'S').replaceAll("1", 'I')
+}
+
+//---------------------------------------------------
 
 
 
