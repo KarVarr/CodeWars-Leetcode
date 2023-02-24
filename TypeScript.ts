@@ -765,6 +765,15 @@ export function well(x: string[]): string{
 
 //---------------------------------------------------
 
+/*
+Capitalization and Mutability
+*/
+
+export function capitalizeWord(word: string): string {
+  return word.slice(0,1).toUpperCase() + word.slice(1, word.length)
+}
+
+//---------------------------------------------------
 
 
 
