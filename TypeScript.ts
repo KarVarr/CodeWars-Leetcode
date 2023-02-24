@@ -732,6 +732,15 @@ export function cubeChecker(volume: number, side: number): boolean{
 
 //---------------------------------------------------
 
+/*
+FIXME: Replace all dots
+*/
+
+export function replaceDots(str: string): string {
+  return str.replaceAll(".", '-');
+}
+
+//---------------------------------------------------
 
 
 
