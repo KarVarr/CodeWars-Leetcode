@@ -806,6 +806,19 @@ export function rps(p1: string, p2: string): string{
 
 //---------------------------------------------------
 
+/*
+L1: Set Alarm
+*/
+
+export function setAlarm(employed: boolean, vacation: boolean) {
+  return employed == true && vacation == false ? true : false 
+}
+
+//---------------------------------------------------
+
+
+
+
 
 
 
