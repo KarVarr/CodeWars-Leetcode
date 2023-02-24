@@ -742,6 +742,18 @@ export function replaceDots(str: string): string {
 
 //---------------------------------------------------
 
+/*
+Jenny's secret message
+*/
+
+export function greet(name:string): string {
+  if(name === "Johnny") {
+    return "Hello, my love!";
+    }
+  return "Hello, " + name + "!";
+}
+
+//---------------------------------------------------
 
 
 
