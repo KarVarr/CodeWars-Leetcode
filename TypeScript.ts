@@ -755,6 +755,15 @@ export function greet(name:string): string {
 
 //---------------------------------------------------
 
+/*
+Well of Ideas - Easy Version
+*/
+
+export function well(x: string[]): string{
+  return x.filter(i => i == "good").length == 0  ? 'Fail!' :  x.filter(i => i == "good").length < 3  ?'Publish!' :  'I smell a series!'    
+}
+
+//---------------------------------------------------
 
 
 
