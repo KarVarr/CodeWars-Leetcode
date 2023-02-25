@@ -846,6 +846,15 @@ export function smash (words: string[]): string {
 
 //---------------------------------------------------
 
+/*
+Hello, Name or World!
+*/
+
+export function hello(name = ''): string {
+  return name == '' ? "Hello, World!" : `Hello, ${name.slice(0,1).toUpperCase() + name.slice(1).toLowerCase()}!`;
+}
+
+//---------------------------------------------------
 
 
 
