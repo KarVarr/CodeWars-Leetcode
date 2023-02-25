@@ -836,6 +836,15 @@ export function usdcny(usd: number): string {
 
 //---------------------------------------------------
 
+/*
+Sentence Smash
+*/
+
+export function smash (words: string[]): string {
+   return  words.join(" ")
+};
+
+//---------------------------------------------------
 
 
 
