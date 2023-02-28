@@ -57,7 +57,6 @@ int century(int year) {
 
 /*
 Is n divisible by x and y?
-
 */
 
 int isDivisible(int n, int x, int y) {
@@ -70,6 +69,15 @@ int isDivisible(int n, int x, int y) {
 
 //---------------------------------------------------
 
+/*
+Grasshopper - Terminal game move function
+*/
+
+int move(int pos, int roll) {
+  return roll * 2 + pos;
+}
+
+//---------------------------------------------------
 
 
 
