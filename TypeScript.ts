@@ -856,6 +856,17 @@ export function hello(name = ''): string {
 
 //---------------------------------------------------
 
+/*
+For Twins: 2. Math operations
+*/
+
+export const iceBrickVolume = (radius: number, bottleLength: number, rimLength: number): number => {
+   const sideLength = Math.sqrt(2) * radius;
+  const height = bottleLength - rimLength;
+  return Math.floor(sideLength * sideLength * height);
+}
+
+//---------------------------------------------------
 
 
 
