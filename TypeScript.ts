@@ -868,6 +868,23 @@ export const iceBrickVolume = (radius: number, bottleLength: number, rimLength: 
 
 //---------------------------------------------------
 
+/*
+BASIC: Making Six Toast.
+*/
+
+export function sixToast(num:number):number {
+  return num <= 3 ? num  : num <= 5 ? num - 1 : num - 6
+}
+
+//---------------------------------------------------
+
+
+
+
+
+
+
+
 
 
 //7 kyu ============================================
