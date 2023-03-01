@@ -27,3 +27,15 @@ class Solution {
 }
 
 //--------------------------------------
+
+//--------------------------------------
+// 1672. Richest Customer Wealth
+//--------------------------------------
+
+class Solution {
+    func maximumWealth(_ accounts: [[Int]]) -> Int {
+        return accounts.map({$0.reduce(0, +)}).max()!
+    }
+}
+
+//--------------------------------------
