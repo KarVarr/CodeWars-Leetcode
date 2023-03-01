@@ -372,6 +372,21 @@ func vertMirror(_ s: String) -> String {
 
 //---------------------------------------------------
 
+/*
+Jumping Number (Special Numbers Series #4)
+*/
+
+func jumpingNumber(_ number: Int) -> String {
+  let num = String(number).compactMap{$0.wholeNumberValue}
+  for i in 1..<num.count {
+   if  abs(num[i] - num[i - 1]) != 1 {
+     return "Not!!"
+   }
+  }
+  return "Jumping!!" 
+}
+
+//---------------------------------------------------
 
 
 //MARK: - 6kyu  ======================================
