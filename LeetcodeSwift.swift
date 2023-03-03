@@ -93,6 +93,29 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+9. Palindrome Number
+*/
+
+class Solution {
+    func isPalindrome(_ x: Int) -> Bool {
+        guard x >= 0 else {return false}
+        let rev = String(x).compactMap({$0.wholeNumberValue}).reversed() 
+        let new = Int( rev.map { String($0) }.joined(separator: "") )
+        if x == new {
+            return true
+        } else {
+            return false
+        }
+        return true
+    }
+}
+
+//---------------------------------------------------
+
+
+
+
 
 
 
