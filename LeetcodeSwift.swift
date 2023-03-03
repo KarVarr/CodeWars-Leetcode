@@ -63,4 +63,17 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+58. Length of Last Word
+*/
+
+class Solution {
+    func lengthOfLastWord(_ s: String) -> Int {
+        let strArr = s.trimmingCharacters(in: .whitespacesAndNewlines).components(separatedBy: " ")
+        return strArr[strArr.count - 1].count
+
+    }
+}
+
+//---------------------------------------------------
 
