@@ -77,3 +77,27 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+35. Search Insert Position
+*/
+
+class Solution {
+    func searchInsert(_ nums: [Int], _ target: Int) -> Int {
+        guard let n = nums.index(of:  target) else {
+            let result = nums.filter { $0 < target }.count
+            return result
+        }
+        return n
+    }
+}
+
+//---------------------------------------------------
+
+
+
+
+
+
+
+
+
