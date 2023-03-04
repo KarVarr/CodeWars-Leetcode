@@ -113,6 +113,20 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+136. Single Number
+*/
+
+class Solution {
+    func singleNumber(_ nums: [Int]) -> Int {
+        guard nums.count >= 1 else {return nums[0]}
+        var num = 0
+        nums.map{num ^= $0}
+        return num
+    }
+}
+
+//---------------------------------------------------
 
 
 
