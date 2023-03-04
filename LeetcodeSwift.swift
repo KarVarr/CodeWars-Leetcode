@@ -128,6 +128,21 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+217. Contains Duplicate
+*/
+
+class Solution {
+    func containsDuplicate(_ nums: [Int]) -> Bool {
+      var set = Set(nums)
+        if nums.count > set.count {
+            return true
+        }
+      return false
+    }
+}
+
+//---------------------------------------------------
 
 
 
