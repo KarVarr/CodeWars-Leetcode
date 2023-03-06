@@ -144,6 +144,18 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+191. Number of 1 Bits
+*/
+
+class Solution {
+    func hammingWeight(_ n: Int) -> Int {
+       let str = String(n, radix: 2)
+       return Array(str).filter({$0 == "1"}).count 
+    }
+}
+
+//---------------------------------------------------
 
 
 
