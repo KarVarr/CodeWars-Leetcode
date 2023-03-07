@@ -169,6 +169,28 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+258. Add Digits
+*/
+
+class Solution {
+    func addDigits(_ num: Int) -> Int {
+        guard num > 9 else { return num }
+        var sum = num
+
+        while sum >= 10 {
+            var arr = String(sum).compactMap({$0.wholeNumberValue}).reduce(0, +)
+            if arr > 10 {
+                sum = arr
+            } else {
+                sum = arr
+            }
+        } 
+        return sum
+    }
+}
+
+//---------------------------------------------------
 
 
 
