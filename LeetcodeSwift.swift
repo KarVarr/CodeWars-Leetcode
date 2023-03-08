@@ -192,6 +192,21 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+283. Move Zeroes
+*/
+
+class Solution {
+    func moveZeroes(_ nums: inout [Int]) {
+        if nums.count > 1 {nums}
+        var filt = nums.filter{$0 == 0}
+        var newArr = nums.filter{$0 != 0}
+        filt.map({newArr.append($0)})
+        nums = newArr
+    }
+}
+
+//---------------------------------------------------
 
 
 
