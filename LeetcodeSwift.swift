@@ -229,6 +229,23 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+520. Detect Capital
+*/
+
+class Solution {
+    func detectCapitalUse(_ word: String) -> Bool {
+        var wCap = word.capitalized
+        var wUp = word.uppercased()
+        var wLow = word.lowercased()
+        if wCap == word || wUp == word || wLow == word {
+            return true
+        }
+        return false 
+    }
+}
+
+//---------------------------------------------------
 
 
 
