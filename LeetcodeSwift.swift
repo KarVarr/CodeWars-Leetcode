@@ -208,6 +208,26 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+342. Power of Four
+*/
+
+class Solution {
+    func isPowerOfFour(_ n: Int) -> Bool {
+       guard n > 0 else {return false}
+
+       var num = n
+       while num > 1 {
+           if num % 4 != 0 {
+               return false
+           }
+           num /= 4
+       }
+        return  true
+    }
+}
+
+//---------------------------------------------------
 
 
 
