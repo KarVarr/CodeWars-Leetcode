@@ -276,4 +276,24 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+709. To Lower Case
+*/
+
+class Solution {
+    func toLowerCase(_ s: String) -> String {
+        s.lowercased()
+    }
+}
+
+//---------------------------------------------------
+
+
+
+
+
+
+
+
+
 
