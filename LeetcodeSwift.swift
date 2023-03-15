@@ -288,6 +288,18 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+2553. Separate the Digits in an Array
+*/
+
+class Solution {
+    func separateDigits(_ nums: [Int]) -> [Int] {
+        let result = nums.map{String($0).compactMap{$0.wholeNumberValue}}
+        return result.flatMap{$0}
+    }
+}
+
+//---------------------------------------------------
 
 
 
