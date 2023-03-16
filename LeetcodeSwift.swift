@@ -301,6 +301,22 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+2108. Find First Palindromic String in the Array
+*/
+
+class Solution {
+    func firstPalindrome(_ words: [String]) -> String {
+        for i in words {
+            if i == String(i.reversed()) {
+                return i
+            }
+        }
+        return ""
+    }
+}
+
+//---------------------------------------------------
 
 
 
