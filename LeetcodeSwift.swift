@@ -318,6 +318,23 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+2185. Counting Words With a Given Prefix
+*/
+
+class Solution {
+    func prefixCount(_ words: [String], _ pref: String) -> Int {
+        var arr = [String]()
+        for i in words {
+           if i.hasPrefix(pref) {
+                arr.append(i)
+            }
+        }
+        return arr.count
+    }
+}
+
+//---------------------------------------------------
 
 
 
