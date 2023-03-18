@@ -336,6 +336,17 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1108. Defanging an IP Address
+*/
+
+class Solution {
+    func defangIPaddr(_ address: String) -> String {
+        address.replacingOccurrences(of: "." , with: "[.]" ) 
+    }
+}
+
+//---------------------------------------------------
 
 
 
