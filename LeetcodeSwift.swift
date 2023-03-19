@@ -360,6 +360,26 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+2011. Final Value of Variable After Performing Operations
+*/
+
+class Solution {
+    func finalValueAfterOperations(_ operations: [String]) -> Int {
+        var result = 0
+
+        for num in operations {
+            if num.contains("+") {
+                result += 1
+            } else {
+                result -= 1
+            }
+        } 
+        return result
+    }
+}
+
+//---------------------------------------------------
 
 
 
