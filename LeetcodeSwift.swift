@@ -381,6 +381,36 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+771. Jewels and Stones
+*/
+
+class Solution {
+    func numJewelsInStones(_ jewels: String, _ stones: String) -> Int {
+        let j = Array(jewels)
+        let s = Array(stones)
+        var count = [Character]()
+        for i in j {
+           count += s.filter{$0 == i}
+        }
+        return count.count
+    }
+}
+
+//---------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
