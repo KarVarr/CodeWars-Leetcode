@@ -399,6 +399,26 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1470. Shuffle the Array
+*/
+
+class Solution {
+    func shuffle(_ nums: [Int], _ n: Int) -> [Int] {
+        guard n > 1 else {return nums}
+        
+        var newArr = [Int]()
+        for i in 0..<n {
+            newArr.append(nums[i])
+            newArr.append(nums[i+n])
+        }
+          
+        return newArr
+       
+    }
+}
+
+//---------------------------------------------------
 
 
 
