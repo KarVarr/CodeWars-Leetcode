@@ -420,6 +420,24 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+2114. Maximum Number of Words Found in Sentences
+*/
+
+class Solution {
+    func mostWordsFound(_ sentences: [String]) -> Int {
+        var count = [Int]()
+        
+        for word in sentences {
+            var sentence = word.components(separatedBy: " ").count
+            count.append(sentence)
+        }
+       
+        return count.max() ?? 1
+    }
+}
+
+//---------------------------------------------------
 
 
 
