@@ -439,6 +439,24 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1480. Running Sum of 1d Array
+*/
+
+class Solution {
+    func runningSum(_ nums: [Int]) -> [Int] {
+        var result = [Int]()
+
+        for i in 1..<nums.count {
+           result.append(nums[0..<i].reduce(0, +))
+        }
+        result.append(nums.reduce(0,+))
+        
+        return result
+    }
+}
+
+//---------------------------------------------------
 
 
 
