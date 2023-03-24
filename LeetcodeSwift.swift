@@ -458,6 +458,19 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+2535. Difference Between Element Sum and Digit Sum of an Array
+*/
+
+class Solution {
+    func differenceOfSum(_ nums: [Int]) -> Int {
+        let sumArray = nums.reduce(0, +)
+        var digit = nums.map{String($0).compactMap{$0.wholeNumberValue}}.flatMap{$0}.reduce(0,+)
+        return sumArray - digit
+    }
+}
+
+//---------------------------------------------------
 
 
 
