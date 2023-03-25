@@ -472,6 +472,24 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1859. Sorting the Sentence
+*/
+
+class Solution {
+    func sortSentence(_ s: String) -> String {
+      var arr = [String](repeating: "", count: 9)
+        let str = s.components(separatedBy: " ")
+        for i in 0..<str.count {
+            let word = str[i]
+            let index = Int(String(word.last!))! - 1
+            arr[index] = String(word.dropLast())
+        }
+        return arr.joined(separator: " ").trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+}
+
+//---------------------------------------------------
 
 
 
