@@ -503,6 +503,17 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1920. Build Array from Permutation
+*/
+
+class Solution {
+    func buildArray(_ nums: [Int]) -> [Int] {
+        nums.enumerated().map{nums[$1]}
+    }
+}
+
+//---------------------------------------------------
 
 
 
