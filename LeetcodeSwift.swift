@@ -535,6 +535,17 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+2413. Smallest Even Multiple
+*/
+
+class Solution {
+    func smallestEvenMultiple(_ n: Int) -> Int {
+        n % 2 == 0 ? n : n * 2
+    }
+}
+
+//---------------------------------------------------
 
 
 
