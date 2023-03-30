@@ -547,6 +547,37 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+2413. Smallest Even Multiple
+*/
+
+class Solution {
+    func interpret(_ command: String) -> String {
+      var s = ""
+        var i = command.startIndex
+        
+        while i < command.endIndex {
+            if command[i] == "G" {
+                s.append("G")
+                i = command.index(after: i)
+            } else if command[i...].starts(with: "()") {
+                s.append("o")
+                i = command.index(i, offsetBy: 2)
+            } else if command[i...].starts(with: "(al)") {
+                s.append("al")
+                i = command.index(i, offsetBy: 4)
+            } else {
+                i = command.index(after: i)
+            }
+        }
+        
+        return s
+    }
+}
+
+//---------------------------------------------------
+
+
 
 
 
