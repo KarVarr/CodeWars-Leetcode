@@ -577,6 +577,37 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1431. Kids With the Greatest Number of Candies
+*/
+
+class Solution {
+    func kidsWithCandies(_ candies: [Int], _ extraCandies: Int) -> [Bool] {
+        var arr = [Bool]()
+         var num = candies.max()!
+            candies.map{
+                 if $0 + extraCandies >= num {
+                     arr.append(true)
+                 } else {
+                     arr.append(false)
+                 }
+            }
+        return arr
+    }
+}
+
+//---------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 
 
 
