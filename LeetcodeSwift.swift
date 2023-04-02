@@ -598,6 +598,27 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1773. Count Items Matching a Rule
+*/
+
+class Solution {
+    func countMatches(_ items: [[String]], _ ruleKey: String, _ ruleValue: String) -> Int {
+        var count = 0
+        items.map{
+           if ruleKey == "type" && ruleValue == $0[0] {
+               count += 1
+           } else if ruleKey == "color" && ruleValue == $0[1] {
+               count += 1
+           } else if ruleKey == "name" && ruleValue == $0[2] {
+               count += 1
+           }
+        }
+        return count
+    }
+}
+
+//---------------------------------------------------
 
 
 
