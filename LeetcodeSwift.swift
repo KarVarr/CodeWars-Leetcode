@@ -620,6 +620,19 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1791. Find Center of Star Graph
+*/
+
+class Solution {
+    func findCenter(_ edges: [[Int]]) -> Int {
+        let numbers = edges.flatMap{$0}.sorted()
+        let dups = Dictionary(grouping: numbers, by: {$0}).filter { $1.count > 1 }.keys
+        return dups.compactMap { Int(String($0)) }[0]
+    }
+}
+
+//---------------------------------------------------
 
 
 
