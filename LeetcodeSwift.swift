@@ -634,6 +634,25 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+2520. Count the Digits That Divide a Number
+*/
+
+class Solution {
+    func countDigits(_ num: Int) -> Int {
+        let arr = String(num).compactMap{$0.wholeNumberValue}
+        var count = 0
+        for i in 0..<arr.count {
+           let str = arr[i]
+           if str != 0 && num % str == 0 {
+               count += 1
+           }
+        }
+        return count
+    }
+}
+
+//---------------------------------------------------
 
 
 
