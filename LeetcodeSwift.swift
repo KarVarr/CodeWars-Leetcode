@@ -654,6 +654,17 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1688. Count of Matches in Tournament
+*/
+
+class Solution {
+    func numberOfMatches(_ n: Int) -> Int {
+        n - 1
+    }
+}
+
+//---------------------------------------------------
 
 
 
