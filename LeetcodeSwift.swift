@@ -666,6 +666,29 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1323. Maximum 69 Number
+*/
+
+class Solution {
+    func maximum69Number (_ num: Int) -> Int {
+        var result = num
+        var nums = String(num).compactMap{$0.wholeNumberValue}
+        for i in 0..<nums.count {
+            if nums[i] == 6 {
+                nums[i] = 9
+                let n = Int(nums.map{String($0)}.joined(separator: ""))!
+                if n > result {
+                    result = n
+                }
+                nums[i] = 6
+            }
+        }
+        return result
+    }
+}
+
+//---------------------------------------------------
 
 
 
