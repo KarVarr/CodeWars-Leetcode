@@ -690,6 +690,17 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+557. Reverse Words in a String III
+*/
+
+class Solution {
+    func reverseWords(_ s: String) -> String {
+        s.components(separatedBy: " ").map{$0.reversed()}.map{String($0)}.joined(separator: " ")
+    }
+}
+
+//---------------------------------------------------
 
 
 
