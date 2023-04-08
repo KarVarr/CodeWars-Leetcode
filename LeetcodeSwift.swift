@@ -702,6 +702,23 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1464. Maximum Product of Two Elements in an Array
+*/
+
+class Solution {
+    func maxProduct(_ nums: [Int]) -> Int {
+        guard nums.count > 2 else { 
+            return nums.map{$0 - 1}.reduce(1,*)
+            }
+
+        let max1 = nums.sorted(by: >)[0]
+        let max2 = nums.sorted(by: >)[1]
+        return (max1 - 1) * (max2 - 1)
+    }
+}
+
+//---------------------------------------------------
 
 
 
