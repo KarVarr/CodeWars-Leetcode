@@ -720,6 +720,20 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1281. Subtract the Product and Sum of Digits of an Integer
+*/
+
+class Solution {
+    func subtractProductAndSum(_ n: Int) -> Int {
+        let multiplay = String(n).compactMap{$0.wholeNumberValue}.reduce(1,*)
+        let sum = String(n).compactMap{$0.wholeNumberValue}.reduce(0,+)
+        return multiplay - sum
+    }
+}
+
+//---------------------------------------------------
+
 
 
 
