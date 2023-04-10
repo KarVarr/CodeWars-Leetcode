@@ -734,6 +734,21 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1389. Create Target Array in the Given Order
+*/
+
+class Solution {
+    func createTargetArray(_ nums: [Int], _ index: [Int]) -> [Int] {
+        var arr = [Int]()
+        for i in 0..<nums.count {
+            arr.insert(nums[i], at: index[i])
+        }
+        return arr
+    }
+}
+
+//---------------------------------------------------
 
 
 
