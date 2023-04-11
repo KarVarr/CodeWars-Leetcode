@@ -750,6 +750,26 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+2418. Sort the People
+*/
+
+class Solution {
+    func sortPeople(_ names: [String], _ heights: [Int]) -> [String] {
+        var dict: [Int: String] = [:]
+        for i in 0..<names.count {
+            dict[heights[i]] = names[i]
+        }
+        
+        var result: [String] = [String]()
+        for i in dict.keys.sorted(by: >) {
+           result.append( dict[i]! )
+        }
+        return result
+    }
+}
+
+//---------------------------------------------------
 
 
 
