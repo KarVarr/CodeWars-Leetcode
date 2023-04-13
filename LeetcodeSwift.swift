@@ -789,6 +789,30 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1768. Merge Strings Alternately
+*/
+
+class Solution {
+    func mergeAlternately(_ word1: String, _ word2: String) -> String {
+        var str = [String]()
+        
+        let arrWord1 = Array(word1)
+        let arrWord2 = Array(word2)
+       
+        for i in 0..<max(arrWord1.count, arrWord2.count) {
+            if i < arrWord1.count {
+                str.append(String(arrWord1[i]))
+            }
+            if i < arrWord2.count {
+                str.append(String(arrWord2[i]))
+            }
+        }
+        return str.joined(separator: "")
+    }
+}
+
+//---------------------------------------------------
 
 
 
