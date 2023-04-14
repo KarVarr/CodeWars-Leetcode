@@ -814,6 +814,17 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1662. Check If Two String Arrays are Equivalent
+*/
+
+class Solution {
+    func arrayStringsAreEqual(_ word1: [String], _ word2: [String]) -> Bool {
+        word1.reduce(" ", +) == word2.reduce(" ", +) ? true : false
+    }
+}
+
+//---------------------------------------------------
 
 
 
