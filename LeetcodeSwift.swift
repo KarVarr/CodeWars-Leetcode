@@ -868,6 +868,39 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1528. Shuffle String
+*/
+
+class Solution {
+    func restoreString(_ s: String, _ indices: [Int]) -> String {
+        var dict: [Int: String] = [:]
+
+        for i in 0..<indices.count {
+            var str = Array(s)
+            dict[indices[i]] = String(str[i])
+        }
+        
+        let string = dict.sorted(by: {$0.0 < $1.0})
+        let result = Array(string.map({ $0.value }) )
+
+        return result.map { String($0) }.joined(separator: "")
+    }
+}
+
+//---------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
