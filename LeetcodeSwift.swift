@@ -890,6 +890,21 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1816. Truncate Sentence
+*/
+
+class Solution {
+    func truncateSentence(_ s: String, _ k: Int) -> String {
+        var str = ""        
+        let arrStr = s.components(separatedBy: " ")
+        str = arrStr[0..<k].joined(separator: " ")
+
+        return str
+    }
+}
+
+//---------------------------------------------------
 
 
 
