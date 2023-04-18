@@ -906,6 +906,32 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+804. Unique Morse Code Words
+*/
+
+class Solution {
+    func uniqueMorseRepresentations(_ words: [String]) -> Int {
+        guard words.count >= 1 else { return 1 }
+        
+        let morse = ["a": ".-","b": "-...","c": "-.-.","d": "-..","e": ".","f": "..-.", "g": "--.", "h": "....","i": "..","j": ".---","k": "-.-", "l": ".-..","m": "--","n": "-.","o": "---","p": ".--.",
+                        "q": "--.-","r": ".-.", "s": "...","t": "-", "u": "..-","v": "...-","w": ".--","x": "-..-","y": "-.--","z": "--.."
+                     ]
+        var arr = [String]()
+        
+        for i in words {
+            var str = ""
+            let array = Array(i)
+            array.map{str += morse[String($0)]!}
+            
+            arr.append(str)
+        }
+        
+        return Set(arr).count
+    }
+}
+
+//---------------------------------------------------
 
 
 
