@@ -933,6 +933,31 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1436. Destination City
+*/
+
+class Solution {
+    func destCity(_ paths: [[String]]) -> String {
+        var outgoingCities = Set<String>()
+        var destinationCity = ""
+
+        for path in paths {
+            outgoingCities.insert(path[0])
+        }
+
+       for path in paths {
+            if !outgoingCities.contains(path[1]) {
+                destinationCity = path[1]
+                break
+            }
+        }
+       
+       return destinationCity
+    }
+}
+
+//---------------------------------------------------
 
 
 
