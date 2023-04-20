@@ -959,6 +959,31 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+20. Valid Parentheses
+*/
+
+class Solution {
+    func isValid(_ s: String) -> Bool {
+        var stack = [Character]()
+        let compare: [Character: Character] = [")": "(", "]":"[", "}": "{"]
+
+        for c in s {
+            if compare.values.contains(c) {
+                stack.append(c)
+            } else if let expect = compare[c] {
+                if stack.last == expect {
+                    stack.removeLast()
+                } else {
+                    return false 
+                }
+            }
+        } 
+        return  stack.isEmpty 
+    }
+}
+
+//---------------------------------------------------
 
 
 
