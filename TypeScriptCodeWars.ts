@@ -878,6 +878,21 @@ export function sixToast(num:number):number {
 
 //---------------------------------------------------
 
+/*
+What's the real floor?
+*/
+
+export function getRealFloor(n: number): number {
+  switch (true) {
+      case n < 1: {return n}
+      case n == 1: {return 0}
+      case n == 13: {return 14}
+      case n < 14: {return n - 1}
+       default: {return n - 2}
+  }
+}
+
+//---------------------------------------------------
 
 
 
