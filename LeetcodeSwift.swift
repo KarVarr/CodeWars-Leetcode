@@ -985,6 +985,17 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+2037. Minimum Number of Moves to Seat Everyone
+*/
+
+class Solution {
+    func minMovesToSeat(_ seats: [Int], _ students: [Int]) -> Int {
+      return abs(students.reduce(0, +) - seats.reduce(0, +))
+    }
+}
+
+//---------------------------------------------------
 
 
 
