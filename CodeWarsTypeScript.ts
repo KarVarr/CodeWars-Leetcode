@@ -894,6 +894,18 @@ export function getRealFloor(n: number): number {
 
 //---------------------------------------------------
 
+/*
+Training JS #29: methods of arrayObject---concat() and join()
+*/
+
+export function bigToSmall(arr: number[][]): string {  
+  const flatArr = arr.flat(); 
+  const sortedArr = flatArr.sort((a, b) => b - a); 
+  const result = sortedArr.join(">"); 
+  return result;
+}
+
+//---------------------------------------------------
 
 
 
