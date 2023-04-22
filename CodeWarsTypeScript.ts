@@ -907,6 +907,15 @@ export function bigToSmall(arr: number[][]): string {
 
 //---------------------------------------------------
 
+/*
+Volume of a Cuboid
+*/
+
+export function getVolumeOfCuboid(length: number, width:number, height:number): number {
+  return length * width * height;
+}
+
+//---------------------------------------------------
 
 
 
