@@ -997,6 +997,26 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1979. Find Greatest Common Divisor of Array
+*/
+
+class Solution {
+    func findGCD(_ nums: [Int]) -> Int {
+        var maxNumber = nums.max( by: {$0 < $1} )! 
+        var minNumber = nums.min( by: {$0 < $1} )!
+
+        while minNumber != 0 {
+            let result = maxNumber % minNumber
+            maxNumber = minNumber
+            minNumber = result
+        }
+        
+        return maxNumber
+    }
+}
+
+//---------------------------------------------------
 
 
 
