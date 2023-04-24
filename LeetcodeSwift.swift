@@ -1031,6 +1031,17 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+27. Remove Element
+*/
+
+class Solution {
+    func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
+        nums.filter{ $0 != val}.count
+    }
+}
+
+//---------------------------------------------------
 
 
 
