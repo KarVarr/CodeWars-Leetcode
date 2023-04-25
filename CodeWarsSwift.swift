@@ -1,11 +1,27 @@
 import UIKit
 import Foundation
 
+
+//MARK: - 8kyu
+
+/*
+Miles per gallon to kilometers per liter
+*/
+
+func converter(mpg: Int) -> Double {
+  let result = 4.425  - 1.6
+  return Double(mpg) / result
+}
+
+//---------------------------------------------------
+
+
 //MARK: - 7kyu
 
 /*
 Simple Fun #2: Circle of Numbers
 */
+
 func circleOfNumbers(_ n: Int, _ fst: Int) -> Int {
   var number = 0
   if  fst >= n / 2 {
