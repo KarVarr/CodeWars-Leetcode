@@ -1043,6 +1043,22 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+905. Sort Array By Parity
+*/
+
+class Solution {
+    func sortArrayByParity(_ nums: [Int]) -> [Int] {
+        var result = [Int]()
+
+        result.append(contentsOf: nums.filter{$0 % 2 == 0})
+        result.append(contentsOf: nums.filter{$0 % 2 != 0})
+        
+        return result 
+    }
+}
+
+//---------------------------------------------------
 
 
 
