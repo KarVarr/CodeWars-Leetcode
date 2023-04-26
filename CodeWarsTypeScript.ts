@@ -917,6 +917,20 @@ export function getVolumeOfCuboid(length: number, width:number, height:number): 
 
 //---------------------------------------------------
 
+/*
+The Feast of Many Beasts
+*/
+
+export function feast(beast:string, dish:string):boolean {
+  let beasts = beast[0] + beast[beast.length - 1]
+  let dishs = dish[0] + dish[dish.length - 1]
+  if (beasts === dishs) {
+    return true
+  }
+  return false
+}
+
+//---------------------------------------------------
 
 
 
