@@ -1060,6 +1060,17 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1460. Make Two Arrays Equal by Reversing Subarrays
+*/
+
+class Solution {
+    func canBeEqual(_ target: [Int], _ arr: [Int]) -> Bool {
+        target.sorted() == arr.sorted() ? true : false
+    }
+}
+
+//---------------------------------------------------
 
 
 
