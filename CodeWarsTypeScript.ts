@@ -932,6 +932,26 @@ export function feast(beast:string, dish:string):boolean {
 
 //---------------------------------------------------
 
+//---------------------------------------------------
+
+/*
+Total amount of points
+*/
+
+export function points(games : string[]): number {
+  let count = 0;
+  let nums = games.map(val => val.split(":").map(v => parseInt(v)));
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i][0] > nums[i][1]) {
+      count += 3;
+    } else if (nums[i][0] === nums[i][1]) {
+      count += 1;
+    }
+  }
+  return count;
+}
+
+//---------------------------------------------------
 
 
 
