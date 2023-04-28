@@ -1072,6 +1072,29 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+2057. Smallest Index With Equal Value
+*/
+
+class Solution {
+    func smallestEqual(_ nums: [Int]) -> Int {
+        var num: Int!
+
+        for (i,v) in nums.enumerated() {
+            var mod = i % 10
+            if mod == v {
+                num = i
+                break
+            } else {
+                num = -1
+            }
+        }
+
+        return num
+    }
+}
+
+//---------------------------------------------------
 
 
 
