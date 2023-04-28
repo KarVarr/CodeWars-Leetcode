@@ -932,8 +932,6 @@ export function feast(beast:string, dish:string):boolean {
 
 //---------------------------------------------------
 
-//---------------------------------------------------
-
 /*
 Total amount of points
 */
@@ -953,6 +951,22 @@ export function points(games : string[]): number {
 
 //---------------------------------------------------
 
+/*
+Holiday VI - Shark Pontoon
+*/
+
+export function shark(pontoonDistance: number, sharkDistance: number, youSpeed: number, sharkSpeed: number, dolphin: boolean): string {
+  let result = "Alive!"
+  let speed = dolphin ? sharkSpeed / 2 : sharkSpeed
+  if ((sharkDistance / speed) > (pontoonDistance / youSpeed)) {
+    result = "Alive!"
+  } else {
+    result = "Shark Bait!"
+  }
+  return result;
+}
+
+//---------------------------------------------------
 
 
 
