@@ -968,6 +968,16 @@ export function shark(pontoonDistance: number, sharkDistance: number, youSpeed: 
 
 //---------------------------------------------------
 
+/*
+
+Multiple of index
+*/
+
+export function multipleOfIndex(array: number[]):number[] {
+  return array.filter((val, index) => val % index === 0)
+}
+
+//---------------------------------------------------
 
 
 
