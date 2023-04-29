@@ -1096,6 +1096,19 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+977. Squares of a Sorted Array
+*/
+
+class Solution {
+    func sortedSquares(_ nums: [Int]) -> [Int] {
+        nums.map({
+            Int(pow(Double($0), Double(2)))
+        }).sorted()
+    }
+}
+
+//---------------------------------------------------
 
 
 
