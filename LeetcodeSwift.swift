@@ -1122,5 +1122,18 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+704. Binary Search
+*/
+
+class Solution {
+    func search(_ nums: [Int], _ target: Int) -> Int {
+        guard nums.contains(target) else { return -1 }
+
+        return nums.index(of: target)!
+    }
+}
+
+//---------------------------------------------------
 
 
