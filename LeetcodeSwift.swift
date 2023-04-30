@@ -1110,6 +1110,17 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+2651. Calculate Delayed Arrival Time
+*/
+
+class Solution {
+    func findDelayedArrivalTime(_ arrivalTime: Int, _ delayedTime: Int) -> Int {
+        arrivalTime + delayedTime >= 24 ? arrivalTime + delayedTime - 24 : arrivalTime + delayedTime 
+    }
+}
+
+//---------------------------------------------------
 
 
 
