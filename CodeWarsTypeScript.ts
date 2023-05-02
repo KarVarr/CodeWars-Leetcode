@@ -993,6 +993,15 @@ export function reverseWords(str: string): string {
 
 //---------------------------------------------------
 
+/*
+Factorial
+*/
+
+export function factorial(n: number):number {
+  return Array.from({length: n}, (_, i) => i + 1).reduce((a, b) => a * b, 1)
+}
+
+//---------------------------------------------------
 
 
 
