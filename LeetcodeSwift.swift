@@ -1148,3 +1148,20 @@ class Solution {
 
 //---------------------------------------------------
 
+/*
+1822. Sign of the Product of an Array
+*/
+
+class Solution {
+    func arraySign(_ nums: [Int]) -> Int {
+        if nums.map{Double($0)}.reduce(1, *) > 0 {
+            return 1
+        } else if nums.map{Double($0)}.reduce(1, *) < 0 {
+            return -1
+        } else {
+            return 0
+        }
+    }
+}
+
+//---------------------------------------------------
