@@ -15,6 +15,31 @@ func converter(mpg: Int) -> Double {
 
 //---------------------------------------------------
 
+/*
+Function 2 - squaring an argument
+*/
+
+func square(_ num: Int) -> Int {
+  Int(pow(Double(num),2.0))
+}
+
+//---------------------------------------------------
+
+/*
+You Can't Code Under Pressure #1
+*/
+
+func doubleInteger(_ num: Int) -> Int {
+  num * 2
+}
+
+//---------------------------------------------------
+
+
+
+
+
+
 
 //MARK: - 7kyu
 
