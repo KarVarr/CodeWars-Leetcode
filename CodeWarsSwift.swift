@@ -75,6 +75,19 @@ func otherAngle(a: Int, b: Int) -> Int {
 
 //---------------------------------------------------
 
+/*
+Thinkful - Logic Drills: Traffic light
+*/
+
+func update_light(_ current: String) -> String {
+  switch current {
+    case "green": return "yellow"
+    case "yellow": return "red"
+    default: return "green"
+  }
+}
+
+//---------------------------------------------------
 
 
 
