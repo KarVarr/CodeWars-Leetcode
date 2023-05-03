@@ -414,6 +414,32 @@ func factorial(_ n: Int) -> UInt64 {
 
 //---------------------------------------------------
 
+/*
+Valid Parentheses
+*/
+
+func validParentheses(_ str: String) -> Bool {
+  let dict = [")": "("]
+  
+  var stack = [String]()
+    
+    for i in str {
+        if dict[String(i)] != nil { 
+            if stack.isEmpty || stack.last != dict[String(i)] {
+                return false
+            } else {
+                stack.removeLast()
+            }
+        } else { 
+            stack.append(String(i))
+        }
+    }
+    
+    return stack.isEmpty
+  
+}
+
+//---------------------------------------------------
 
 
 
