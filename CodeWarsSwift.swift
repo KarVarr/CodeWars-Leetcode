@@ -35,6 +35,15 @@ func doubleInteger(_ num: Int) -> Int {
 
 //---------------------------------------------------
 
+/*
+Grasshopper - Messi goals function
+*/
+
+func goals(laLigaGoals: Int, copaDelReyGoals: Int, championsLeagueGoals: Int) -> Int {
+  laLigaGoals + copaDelReyGoals + championsLeagueGoals
+}
+
+//---------------------------------------------------
 
 
 
