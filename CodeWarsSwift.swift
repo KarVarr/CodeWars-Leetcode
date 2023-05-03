@@ -45,6 +45,15 @@ func goals(laLigaGoals: Int, copaDelReyGoals: Int, championsLeagueGoals: Int) ->
 
 //---------------------------------------------------
 
+/*
+Volume of a Cuboid
+*/
+
+func getVolumeOfCuboid(length: Int, width: Int, height: Int) -> Int {
+  length * width * height
+}
+
+//---------------------------------------------------
 
 
 
