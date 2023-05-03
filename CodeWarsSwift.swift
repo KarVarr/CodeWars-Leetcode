@@ -55,6 +55,15 @@ func getVolumeOfCuboid(length: Int, width: Int, height: Int) -> Int {
 
 //---------------------------------------------------
 
+/*
+BASIC: Making Six Toast.
+*/
+
+func sixToast(_ num: Int) -> Int {
+  abs(num - 6)
+}
+
+//---------------------------------------------------
 
 
 
