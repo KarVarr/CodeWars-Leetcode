@@ -1188,3 +1188,23 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+2652. Sum Multiples
+*/
+
+class Solution {
+    func sumOfMultiples(_ n: Int) -> Int {
+        var result = [Int]()
+        var sum = (1...n)
+        let nums = [3,5,7]
+
+        for i in nums {
+            result.append(contentsOf: sum.filter{$0 % i == 0})
+        }
+        print(result)
+        return Set(result).reduce(0, +)
+    }
+}
+
+//---------------------------------------------------
