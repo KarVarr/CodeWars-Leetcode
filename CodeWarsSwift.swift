@@ -1055,5 +1055,30 @@ func zeros(_ n: UInt32) -> UInt32 {
 
 //---------------------------------------------------
 
+/*
+Build Tower
+*/
+
+func towerBuilder(n:Int) -> [String] {
+  let nums = (1...n*2).filter{$0 % 2 == 1}
+  var arr = [String]()
+  
+  for i in nums {
+    let spaces = String(repeating: " ", count: (n*2 - i) / 2)
+    let stars = String(repeating: "*", count: i)
+    arr.append(spaces + stars + spaces)
+  }
+  
+  let maxStars = nums.last!
+  let centeringSpaces = String(repeating: " ", count: (n*2 - maxStars) / 2)
+  for i in 0..<n-1 {
+    arr.insert(centeringSpaces + String(repeating: " ", count: i*2+1) + centeringSpaces, at: 0)
+  }
+  
+  return arr.filter{$0.contains("*")}
+}
+
+
+//---------------------------------------------------
 
 
