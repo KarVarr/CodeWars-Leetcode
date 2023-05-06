@@ -1003,5 +1003,14 @@ export function factorial(n: number):number {
 
 //---------------------------------------------------
 
+/*
+Convert to Binary
+*/
+
+export function toBinary(n:number):number {
+  return +n.toString(2)
+}
+
+//---------------------------------------------------
 
 
