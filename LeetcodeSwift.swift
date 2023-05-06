@@ -1208,3 +1208,19 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+2656. Maximum Sum With Exactly K Elements 
+*/
+
+class Solution {
+    func maximizeSum(_ nums: [Int], _ k: Int) -> Int {
+        var result = 0
+        for i in 0..<k {
+           result += nums.max()! + i
+        }
+        return result
+    }
+}
+
+//---------------------------------------------------
