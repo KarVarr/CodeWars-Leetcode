@@ -978,7 +978,23 @@ export function multipleOfIndex(array: number[]):number[] {
 }
 
 //---------------------------------------------------
+    
+/*
+DNA to RNA Conversion
+*/
 
+export function DNAtoRNA(dna: string): string {
+  return dna.replaceAll('T', 'U');
+}
+
+//---------------------------------------------------
+    
+    
+    
+    
+    
+    
+    
 
 
 //7 kyu ============================================
