@@ -988,7 +988,16 @@ export function DNAtoRNA(dna: string): string {
 }
 
 //---------------------------------------------------
-    
+       
+/*
+Is integer safe to use?
+*/
+
+export function SafeInteger(n: number): boolean {
+  return n > 9007199254740990 ? false : true 
+}
+
+//--------------------------------------------------- 
     
     
     
