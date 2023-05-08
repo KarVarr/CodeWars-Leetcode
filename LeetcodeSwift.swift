@@ -1224,3 +1224,28 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+1812. Determine Color of a Chessboard Square
+*/
+
+class Solution {
+    func squareIsWhite(_ coordinates: String) -> Bool {
+        var result = true
+        let black: [Character] = ["a", "c", "e", "g"]
+        let black2: [Character] = ["b", "d", "f", "h"]
+        let nums = (1..<9)
+
+        let arr = Array(coordinates)
+        let num = Int(String(arr[1]))!
+        let char = arr[0]
+
+        if (num % 2 == 1 && black.contains(char)) || (num % 2 == 0 && black2.contains(char)) {
+            result = false
+        }
+
+        return result
+    }
+}
+
+//---------------------------------------------------
