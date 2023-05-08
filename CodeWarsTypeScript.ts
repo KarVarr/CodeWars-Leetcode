@@ -1008,7 +1008,16 @@ export function parseF(s:string): number|null {
 }
 
 //---------------------------------------------------   
-    
+             
+/*
+Find the smallest integer in the array
+*/
+
+export function findSmallestInt(args: number[]): number {
+  return Math.min(...args);
+}
+
+//---------------------------------------------------   
     
     
     
