@@ -998,7 +998,16 @@ export function SafeInteger(n: number): boolean {
 }
 
 //--------------------------------------------------- 
-    
+         
+/*
+Parse float
+*/
+
+export function parseF(s:string): number|null {
+  return !isNaN(Number(s)) ? Number(s) : null
+}
+
+//---------------------------------------------------   
     
     
     
