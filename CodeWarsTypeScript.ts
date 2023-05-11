@@ -1051,9 +1051,31 @@ export function finalGrade (exam: number, projects: number): number {
 }
 
 //---------------------------------------------------   
-    
+                       
+/*
+What is between?
+*/
+
+export function between(a: number, b: number): number[] {
+  let count = a
+  let arr = []
+  
+  while (count <= b) {
+    arr.push(count)
+    count ++
+  }
+  
+  return arr;
+}
+
+//---------------------------------------------------  
     
 
+                   
+                   
+                   
+                   
+                   
 
 //7 kyu ============================================
 
