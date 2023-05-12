@@ -1069,7 +1069,16 @@ export function between(a: number, b: number): number[] {
 }
 
 //---------------------------------------------------  
-    
+                           
+/*
+Find numbers which are divisible by given number
+*/
+
+export function divisibleBy(numbers: number[], divisor: number): number[]{
+  return numbers.filter(val => val % divisor == 0)
+}
+
+//---------------------------------------------------  
 
                    
                    
