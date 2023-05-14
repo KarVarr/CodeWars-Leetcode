@@ -1089,7 +1089,22 @@ export function shortLongShort(a:string, b:string) {
 }
 
 //---------------------------------------------------
-                   
+                           
+/*
+A Needle in the Haystack
+*/
+
+export function findNeedle(haystack: any[]):string {
+  const index = haystack.findIndex((item) => item === "needle");
+  return `found the needle at position ${index}`;
+}
+
+//---------------------------------------------------
+    
+    
+    
+    
+    
                    
                    
                    
