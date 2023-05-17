@@ -1119,7 +1119,22 @@ export function getDrinkByProfession(profession:string): string{
 }
 
 //---------------------------------------------------  
-    
+                                 
+/*
+Is this my tail?
+*/
+
+export function correctTail(body: string, tail: string): boolean{
+  let sub = body.substr(body.length-(tail.length));
+  
+  if (sub == tail) {
+    return true
+  } else {
+    return false
+  }
+}
+
+//---------------------------------------------------  
     
     
     
