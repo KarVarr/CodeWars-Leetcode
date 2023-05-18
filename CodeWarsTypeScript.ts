@@ -1145,7 +1145,16 @@ export function twoSort(s: string[]): string {
 }
 
 //--------------------------------------------------- 
-    
+                                         
+/*
+Double Char
+*/
+
+export function doubleChar(str: string): string{
+  return str.split("").map(val => `${val}${val}`).join("")
+}
+
+//--------------------------------------------------- 
     
                    
                    
