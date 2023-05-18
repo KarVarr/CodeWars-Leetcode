@@ -1135,7 +1135,16 @@ export function correctTail(body: string, tail: string): boolean{
 }
 
 //---------------------------------------------------  
-    
+                                     
+/*
+Sort and Star
+*/
+
+export function twoSort(s: string[]): string {
+  return s.sort()[0].split("").map(val => `***${val}`).join("").slice(3);
+}
+
+//--------------------------------------------------- 
     
     
                    
