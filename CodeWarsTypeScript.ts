@@ -1155,7 +1155,16 @@ export function doubleChar(str: string): string{
 }
 
 //--------------------------------------------------- 
-    
+                                            
+/*
+Printing Array elements with Comma delimiters
+*/
+
+export function printArray(array:Number[]):String{
+  return array.join(",")
+}
+
+//---------------------------------------------------  
                    
                    
                    
