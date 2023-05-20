@@ -1165,7 +1165,21 @@ export function printArray(array:Number[]):String{
 }
 
 //---------------------------------------------------  
-                   
+                                                 
+/*
+Arguments to Binary addition
+*/
+
+export function arr2bin(arr: any[]): string {
+  const sum = arr.reduce((a, b) => {
+    const num = typeof b === 'number' ? b : 0;
+    return a + num;
+  }, 0);
+ 
+  return sum.toString(2)
+}
+
+//---------------------------------------------------               
                    
                    
                    
