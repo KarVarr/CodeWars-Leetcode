@@ -1313,3 +1313,28 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+2000. Reverse Prefix of Word
+*/
+
+class Solution {
+    func reversePrefix(_ word: String, _ ch: Character) -> String {
+        guard word.contains(ch) else {return word}
+
+        let words = Array(word)
+        if let index = words.index(of: ch) {
+            let str = words[0...index].map { String($0) }.joined(separator: "").reversed()
+        
+            let restOfWord = words[index+1..<words.count]
+        
+            let result = str + restOfWord
+            print(result.map { String($0) }.joined(separator: ""))
+            return result.map { String($0) }.joined(separator: "")
+        }
+        
+        return word
+    }
+}
+
+//---------------------------------------------------
