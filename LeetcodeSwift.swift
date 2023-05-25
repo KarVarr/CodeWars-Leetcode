@@ -1338,3 +1338,24 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+500. Keyboard Row
+*/
+
+class Solution {
+    func findWords(_ words: [String]) -> [String] {
+        let keyboardRows = ["qwertyuiop", "asdfghjkl", "zxcvbnm"]
+        
+        let result = words.filter { word in
+            let lowercaseWord = word.lowercased()
+            return keyboardRows.contains { row in
+                lowercaseWord.allSatisfy { row.contains($0) }
+            }
+        }
+        
+        return result
+    }
+}
+
+//---------------------------------------------------
