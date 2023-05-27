@@ -1359,3 +1359,31 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+2119. A Number After a Double Reversal
+*/
+
+class Solution {
+    
+    func isSameAfterReversals(_ num: Int) -> Bool {
+        let revers1 = revers(num)
+        let revers2 = revers(revers1)
+
+        return num == revers2
+    }
+
+    private func revers(_ n: Int) -> Int {
+        var number = n
+        var revNum = 0
+
+        while number != 0 {
+            revNum = revNum * 10 + number % 10
+            number /= 10
+        }
+
+        return revNum
+    }
+}
+
+//---------------------------------------------------
