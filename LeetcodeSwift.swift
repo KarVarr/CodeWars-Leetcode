@@ -1387,3 +1387,21 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+338. Counting Bits
+*/
+
+class Solution {
+    func countBits(_ n: Int) -> [Int] {
+        var result = [String]()
+
+        for i in 0...n {
+            result.append(String(i, radix: 2))
+        }
+
+        return result.map{$0.compactMap{$0.wholeNumberValue}.reduce(0, +)}
+    }
+}
+
+//---------------------------------------------------
