@@ -1229,4 +1229,18 @@ export function toBinary(n:number):number {
 
 //---------------------------------------------------
 
+/*
+Return the closest number multiple of 10
+*/
+
+export const closestMultiple10 = (num: number): number => {
+ const remainder = num % 10;
+  if (remainder < 5) {
+    return num - remainder;
+  } else {
+    return num + (10 - remainder);
+  }
+};
+
+//---------------------------------------------------
 
