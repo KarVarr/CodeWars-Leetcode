@@ -1442,3 +1442,23 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+326. Power of Three
+*/
+
+class Solution {
+    func isPowerOfThree(_ n: Int) -> Bool {
+        guard n > 0 else { return false }
+        var x = 0
+        while Int(pow(3, Double(x))) <= n {
+            if Int(pow(3, Double(x))) == n {
+                return true
+            }
+            x += 1
+        }
+        return false
+    }
+}
+
+//---------------------------------------------------
