@@ -1462,3 +1462,26 @@ class Solution {
 }
 
 //---------------------------------------------------
+/*
+2032. Two Out of Three
+*/
+
+class Solution {
+    func twoOutOfThree(_ nums1: [Int], _ nums2: [Int], _ nums3: [Int]) -> [Int] {
+        var result = [cont(nums1, nums2), cont(nums2, nums3), cont(nums3, nums1)]
+
+        return Array(Set(result.flatMap{$0}))
+    }
+
+    func cont(_ arr: [Int], _ nums: [Int]) -> [Int] {
+        var result = [Int]()
+        for i in arr {
+            if nums.contains(i) {
+                result.append(i)
+            }
+        }
+        return  result
+    }
+}
+
+//---------------------------------------------------
