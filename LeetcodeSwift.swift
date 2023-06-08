@@ -1462,6 +1462,7 @@ class Solution {
 }
 
 //---------------------------------------------------
+
 /*
 2032. Two Out of Three
 */
@@ -1481,6 +1482,42 @@ class Solution {
             }
         }
         return  result
+    }
+}
+
+//---------------------------------------------------
+
+/*
+2562. Find the Array Concatenation Value
+*/
+
+class Solution {
+    func findTheArrayConcVal(_ nums: [Int]) -> Int {
+        guard nums.count > 1 else { return nums[0]}
+        var result = 0
+        var arr = nums
+
+        while arr.count > 1 {
+            var num: Int
+            if arr.count % 2 == 0 {
+                var str = [arr[0], arr[arr.count - 1]]
+                result += Int(str.map { String($0) }.joined(separator: "")) ?? 0
+                arr.remove(at: 0)
+                arr.remove(at: arr.count - 1)
+            } else {
+                
+                var str = [arr[0], arr[arr.count - 1]]
+                result += Int(str.map { String($0) }.joined(separator: "")) ?? 0
+                arr.remove(at: 0)
+                arr.remove(at: arr.count - 1)
+                if arr.count == 1 {
+                    result += arr[0]
+                }
+            }
+            
+        }
+
+        return result
     }
 }
 
