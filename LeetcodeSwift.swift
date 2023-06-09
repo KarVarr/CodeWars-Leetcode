@@ -1522,3 +1522,27 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+2544. Alternating Digit Sum
+*/
+
+class Solution {
+    func alternateDigitSum(_ n: Int) -> Int {
+        let strNum = String(n).compactMap{$0.wholeNumberValue} 
+        var odd = [Int]()
+        var even = [Int]()
+
+        for (i, val) in strNum.enumerated() {
+            if i % 2 == 0 {
+                odd.append(val)
+            } else {
+                even.append(val)
+            }
+        }
+
+        return odd.reduce(0, +) - even.reduce(0, +)
+    }
+}
+
+//---------------------------------------------------
