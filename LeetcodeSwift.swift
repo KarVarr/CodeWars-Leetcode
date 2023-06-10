@@ -1546,3 +1546,33 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+2042. Check if Numbers Are Ascending in a Sentence
+*/
+
+class Solution {
+    func areNumbersAscending(_ s: String) -> Bool {
+       
+        let string = s
+        let stringArray = string.components(separatedBy: CharacterSet.decimalDigits.inverted)
+        var result = [Int]()
+
+        for item in stringArray {
+            if let number = Int(item) {
+                result.append(number)
+            }
+        }
+
+
+        for i in 1..<result.count {
+            if result[i] < result[i - 1] || result[i] == result[i - 1]{
+                return false 
+            }
+        }
+
+        return true 
+    }
+}
+
+//---------------------------------------------------
