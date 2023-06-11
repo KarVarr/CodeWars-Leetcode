@@ -1576,3 +1576,30 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+1185. Day of the Week
+*/
+
+class Solution {
+    func dayOfTheWeek(_ day: Int, _ month: Int, _ year: Int) -> String {
+        let gregorianCalendar = Calendar(identifier: .gregorian)
+        let dateComponents = DateComponents(calendar: gregorianCalendar, year: year, month: month, day: day)
+
+        let weekDay = gregorianCalendar.component(.weekday, from: gregorianCalendar.date(from: dateComponents)! )
+
+        switch weekDay {
+            case 1 : return "Sunday"
+            case 2 : return "Monday"
+            case 3 : return "Tuesday"
+            case 4 : return "Wednesday"
+            case 5 : return "Thursday"
+            case 6 : return "Friday"
+            case 7 : return "Saturday"
+            default: break
+        }
+        return "Sunday"
+    }
+}
+
+//---------------------------------------------------
