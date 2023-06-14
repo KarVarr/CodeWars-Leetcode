@@ -1244,3 +1244,13 @@ export const closestMultiple10 = (num: number): number => {
 
 //---------------------------------------------------
 
+/*
+Testing 1-2-3
+*/
+
+export function number(array: string[]): string[]{
+  return array.map((val, i) => `${i + 1}: ${val}`)
+}
+
+//---------------------------------------------------
+
