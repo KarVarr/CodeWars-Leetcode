@@ -1603,3 +1603,15 @@ class Solution {
 }
 
 //---------------------------------------------------
+/*
+268. Missing Number
+*/
+
+class Solution {
+    func missingNumber(_ nums: [Int]) -> Int {
+        let range = Array(0...nums.count)
+        return Array(Set(nums).symmetricDifference(range)).first!
+    }
+}
+
+//---------------------------------------------------
