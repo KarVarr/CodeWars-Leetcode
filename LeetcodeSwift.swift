@@ -1603,6 +1603,7 @@ class Solution {
 }
 
 //---------------------------------------------------
+
 /*
 268. Missing Number
 */
@@ -1611,6 +1612,29 @@ class Solution {
     func missingNumber(_ nums: [Int]) -> Int {
         let range = Array(0...nums.count)
         return Array(Set(nums).symmetricDifference(range)).first!
+    }
+}
+
+//---------------------------------------------------
+
+/*
+1009. Complement of Base 10 Integer
+*/
+
+class Solution {
+    func bitwiseComplement(_ n: Int) -> Int {
+        let binary = String(n, radix: 2)
+        var result = ""
+
+        for i in binary {
+            if i == "1" {
+                result.append("0")
+            } else {
+                result.append("1")
+            }
+        }
+        
+        return Int(result, radix: 2)!
     }
 }
 
