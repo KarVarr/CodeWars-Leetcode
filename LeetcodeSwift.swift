@@ -1639,3 +1639,31 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+1903. Largest Odd Number in String
+*/
+
+class Solution {
+    func largestOddNumber(_ num: String) -> String {
+        var result = ""
+        
+        if let lastOddIndex = num.lastIndex(where: { $0.isOddDigit }) {
+            result = String(num[...lastOddIndex])
+        }
+        
+        return result
+    }
+}
+
+extension Character {
+    var isOddDigit: Bool {
+        guard let digit = self.wholeNumberValue else {
+            return false
+        }
+        return digit % 2 != 0
+    }
+}
+
+
+//---------------------------------------------------
