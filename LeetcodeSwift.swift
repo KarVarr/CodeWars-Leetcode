@@ -1667,3 +1667,24 @@ extension Character {
 
 
 //---------------------------------------------------
+
+/*
+168. Excel Sheet Column Title
+*/
+
+class Solution {
+    func convertToTitle(_ columnNumber: Int) -> String {
+        var result = ""
+        var number = columnNumber
+    
+        while number > 0 {
+            let code = UnicodeScalar((number - 1) % 26 + Int(("A" as UnicodeScalar).value))
+            result = String(code!) + result
+            number = (number - 1) / 26
+        }
+    
+        return result
+    }
+}
+
+//---------------------------------------------------
