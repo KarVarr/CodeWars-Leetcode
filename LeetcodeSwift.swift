@@ -1688,3 +1688,18 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+125. Valid Palindrome
+*/
+
+class Solution {
+    func isPalindrome(_ s: String) -> Bool {
+        guard s != " " else { return true}
+        let newStr = s.replacingOccurrences(of: "[\\s \\p{P} `;?]", with: "", options: .regularExpression).lowercased()
+        let reversStr = newStr.reversed()
+        return newStr == String(reversStr)
+    }
+}
+
+//---------------------------------------------------
