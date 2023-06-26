@@ -1703,3 +1703,24 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+1154. Day of the Year
+*/
+
+class Solution {
+    func dayOfYear(_ date: String) -> Int {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        guard let newDate = dateFormatter.date(from: date) else {
+            return -1 
+        }
+
+        let cal = Calendar.current
+        let day = cal.ordinality(of: .day, in: .year, for: newDate)
+
+        return day ?? -1 
+    }
+}
+
+//---------------------------------------------------
