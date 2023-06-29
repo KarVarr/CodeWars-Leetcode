@@ -1724,3 +1724,16 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+26. Remove Duplicates from Sorted Array
+*/
+
+class Solution {
+    func removeDuplicates(_ nums: inout [Int]) -> Int {
+        nums = Array(Set(nums)).sorted()
+        return nums.count
+    }
+}
+
+//---------------------------------------------------
