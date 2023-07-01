@@ -1737,3 +1737,26 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+2529. Maximum Count of Positive Integer and Negative Integer
+*/
+
+class Solution {
+    func maximumCount(_ nums: [Int]) -> Int {
+        var neg = [Int]()
+        var pos = [Int]()
+
+        for i in nums {
+            if i >= 1 {
+                pos.append(i)
+            } else if i <= -1 {
+                neg.append(i)
+            }
+        }
+
+        return [neg.count, pos.count].max()!
+    }
+}
+
+//---------------------------------------------------
