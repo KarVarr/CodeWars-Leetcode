@@ -1760,3 +1760,30 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+922. Sort Array By Parity II
+*/
+
+class Solution {
+    func sortArrayByParityII(_ nums: [Int]) -> [Int] {
+        
+        var result = Array(repeating: 0, count: nums.count)
+        var odd = 1
+        var even = 0
+
+        for i in nums {
+            if i % 2 == 0 {
+                result[even] = i
+                even += 2
+            } else if i % 2 == 1{
+                result[odd] = i
+                odd += 2
+            }
+        }
+        
+        return result
+    }
+}
+
+//---------------------------------------------------
