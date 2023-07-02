@@ -1787,3 +1787,34 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+476. Number Complement
+*/
+
+class Solution {
+    func findComplement(_ num: Int) -> Int {
+        
+        var result = 0
+
+        var binary = String(num, radix: 2)
+        var n = ""
+
+        for i in binary {
+            if i == "1" {
+                n += "0"
+            } else if i == "0" {
+                n += "1"
+            }
+        }
+
+        if let res = Int(n, radix: 2) {
+            result = res
+        }
+        
+
+        return result
+    }
+}
+
+//---------------------------------------------------
