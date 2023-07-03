@@ -1818,3 +1818,23 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+1952. Three Divisors
+*/
+
+class Solution {
+    func isThree(_ n: Int) -> Bool {
+        var result = 0
+        let arr = Array(1...n)
+        for i in arr {
+            if n % i == 0 {
+                result += 1
+            }
+        }
+        
+        return result == 3
+    }
+}
+
+//---------------------------------------------------
