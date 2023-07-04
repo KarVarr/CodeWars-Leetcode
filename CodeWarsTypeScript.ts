@@ -1190,7 +1190,17 @@ export function remove(s: string): string {
 }
 
 //---------------------------------------------------                     
-                   
+                                      
+/*
+Is it a palindrome?
+*/
+
+export function isPalindrome(x: string): boolean {
+  let str = x.split("").reverse().join("").toLowerCase();
+  return x.toLowerCase() == str ? true : false 
+}
+
+//---------------------------------------------------      
                    
     
     
