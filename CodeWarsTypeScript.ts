@@ -23,6 +23,16 @@ export function reverseWords(str: string): string {
 //---------------------------------------------------
 
 /*
+Reverse List Order
+*/
+
+export function reverseList(list: number[]): number[] {
+  return list.reverse();
+}
+
+//---------------------------------------------------
+
+/*
 Invert values
 */
 
