@@ -190,6 +190,23 @@ export function humanYearsCatYearsDogYears(humanYears: number): [number, number,
 //---------------------------------------------------
 
 /*
+Triple Trouble
+*/
+
+export function tripleTrouble(one: string, two: string, three: string): string {
+  let result = '';
+  const length = one.length;
+  
+  for (let i = 0; i < length; i++) {
+    result += one.charAt(i) + two.charAt(i) + three.charAt(i);
+  }
+  
+  return result;
+}
+
+//---------------------------------------------------
+
+/*
 Function 2 - squaring an argument
 */
 
