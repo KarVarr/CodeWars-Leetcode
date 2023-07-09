@@ -770,6 +770,27 @@ export function replaceDots(str: string): string {
 //---------------------------------------------------
 
 /*
+Drink about
+*/
+
+export function peopleWithAgeDrink(old: number): string {
+  switch (true) {
+    case old >= 0 && old <= 13:
+      return "drink toddy";
+    case old >= 13 && old <= 17:
+      return "drink coke";
+    case old >= 17 && old <= 20:
+      return "drink beer";
+    case old >= 20 && old <= 30:
+      return "drink whisky";
+    default:
+      return "";
+  }
+}
+
+//---------------------------------------------------
+
+/*
 Jenny's secret message
 */
 
