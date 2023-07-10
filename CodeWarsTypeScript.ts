@@ -326,9 +326,26 @@ export function removeChar(str: string): string {
   return str.slice(1, str.length - 1)
 }
 
-
 //---------------------------------------------------
 
+/*
+No zeros for heros
+*/
+
+export function noBoringZeros(n: number): number {
+
+  if (n === 0) {
+    return 0;
+  }
+
+  while (n % 10 === 0) {
+    n /= 10;
+  }
+
+  return n;
+}
+
+//---------------------------------------------------
 /*
 Abbreviate a Two Word Name
 */
