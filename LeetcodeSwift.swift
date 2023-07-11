@@ -1838,3 +1838,17 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+448. Find All Numbers Disappeared in an Array
+*/
+
+class Solution {
+    func findDisappearedNumbers(_ nums: [Int]) -> [Int] {
+        let newArr = Array(1...nums.count)
+        let diff = Array(Set(nums).symmetricDifference(newArr))
+        return diff.sorted()
+    }
+}
+
+//---------------------------------------------------
