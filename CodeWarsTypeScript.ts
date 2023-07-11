@@ -554,6 +554,18 @@ export function betterThanAverage(classPoints: number[], yourPoints: number) : b
 //---------------------------------------------------
 
 /*
+Lario and Muigi Pipe Problem
+*/
+
+export function pipeFix(numbers: number[]): number[]{
+  const start = Math.min(...numbers);
+  const end = Math.max(...numbers);
+  const array = Array.from({ length: end - start + 1 }, (_, index) => start + index);
+  return array
+}
+
+//---------------------------------------------------
+/*
 Beginner Series #4 Cockroach
 */
 
