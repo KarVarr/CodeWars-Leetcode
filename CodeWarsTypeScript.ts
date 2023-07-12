@@ -259,6 +259,15 @@ export function stringToNumber(str: string): number {
 //---------------------------------------------------
 
 /*
+get character from ASCII Value
+*/
+
+export function getChar(c: number): string {
+  return String.fromCharCode(c)
+}
+
+//---------------------------------------------------
+/*
 String Templates - Bug Fixing #5
 */
 
