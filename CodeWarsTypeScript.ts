@@ -1094,6 +1094,20 @@ export function parseF(s:string): number|null {
 }
 
 //---------------------------------------------------   
+         
+/*
+Summing a number's digits
+*/
+
+export function sumDigits(n: number): number {
+  return Math.abs(n) 
+    .toString() 
+    .split("") 
+    .map((a) => +a) 
+    .reduce((a, b) => a + Math.abs(b), 0); 
+}
+
+//---------------------------------------------------   
              
 /*
 Find the smallest integer in the array
