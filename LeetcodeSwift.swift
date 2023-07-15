@@ -1864,3 +1864,15 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+1832. Check if the Sentence Is Pangram
+*/
+
+class Solution {
+    func checkIfPangram(_ sentence: String) -> Bool {
+        Set(sentence).count == 26
+    }
+}
+
+//---------------------------------------------------
