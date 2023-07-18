@@ -94,6 +94,27 @@ class Solution {
 //---------------------------------------------------
 
 /*
+2154. Keep Multiplying Found Values by Two
+*/
+
+class Solution {
+    func findFinalValue(_ nums: [Int], _ original: Int) -> Int {
+        guard nums.contains(original) else { return original}
+
+        var result = original
+        for _ in nums {
+            if nums.contains(result) {
+                result *= 2
+            } 
+        }
+
+        return result
+    }
+}
+
+//---------------------------------------------------
+
+/*
 9. Palindrome Number
 */
 
