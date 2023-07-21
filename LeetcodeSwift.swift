@@ -1897,3 +1897,26 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+1047. Remove All Adjacent Duplicates In String
+*/
+
+class Solution {
+    func removeDuplicates(_ s: String) -> String {
+        
+        var stack = [Character]()
+
+        for char in s {
+            if let lastChar = stack.last, lastChar == char {
+                stack.popLast()
+            } else {
+                stack.append(char)
+            }
+        }
+
+        return stack.map { String($0) }.joined(separator: "")
+    }
+}
+
+//---------------------------------------------------
