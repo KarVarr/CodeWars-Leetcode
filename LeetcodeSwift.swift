@@ -1920,3 +1920,16 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+2129. Capitalize the Title
+*/
+
+class Solution {
+    func capitalizeTitle(_ title: String) -> String {
+        let arr = title.lowercased().components(separatedBy: " ")
+        return arr.map{$0.count >= 3 ? $0.capitalized: $0.lowercased()}.joined(separator: " ")
+    }
+}
+
+//---------------------------------------------------
