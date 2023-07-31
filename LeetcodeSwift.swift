@@ -1933,3 +1933,30 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+2148. Count Elements With Strictly Smaller and Greater Elements
+*/
+
+class Solution {
+    func countElements(_ nums: [Int]) -> Int {
+        guard nums.count > 1 else { return 0}
+        
+        var count = 0
+        var num = nums
+        let max = nums.max()!
+        let min = nums.min()!
+
+        num.removeAll{$0 == max || $0 == min}
+
+        for i in num {
+            if i > min && i < max {
+                count += 1
+            }
+        }
+        
+        return count
+    }
+}
+
+//---------------------------------------------------
