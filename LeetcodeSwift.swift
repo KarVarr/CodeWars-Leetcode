@@ -1960,3 +1960,27 @@ class Solution {
 }
 
 //---------------------------------------------------
+/*
+2465. Number of Distinct Averages
+*/
+
+class Solution {
+    func distinctAverages(_ nums: [Int]) -> Int {
+        guard nums.count > 1 else { return 1 }
+        var result = [Double]()
+        var n = nums.sorted()
+
+        while n.count != 0 {
+            let max = n.max()!
+            let min = n.min()!
+            let average = Double(min + max) / 2.0
+            result.append(average)
+            n.removeFirst()
+            n.removeLast()
+        }
+
+        return Set(result).count
+    }
+}
+
+//---------------------------------------------------
