@@ -1960,6 +1960,7 @@ class Solution {
 }
 
 //---------------------------------------------------
+
 /*
 2465. Number of Distinct Averages
 */
@@ -1980,6 +1981,34 @@ class Solution {
         }
 
         return Set(result).count
+    }
+}
+
+//---------------------------------------------------
+
+/*
+1046. Last Stone Weight
+*/
+
+class Solution {
+    func lastStoneWeight(_ stones: [Int]) -> Int {
+        guard stones.count > 1 else { return 1 }
+
+        var stone = stones.sorted()
+        while stone.count != 1 {
+            let max1 = stone.last!
+            stone.removeLast()
+
+            let max2 = stone.last! 
+            stone.removeLast()
+
+            let sum = max1 - max2
+            
+            stone.append(sum)
+            stone = stone.sorted()
+        }
+
+        return stone.first!
     }
 }
 
