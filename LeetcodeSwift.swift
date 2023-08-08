@@ -2013,3 +2013,18 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+2733. Neither Minimum nor Maximum
+*/
+
+class Solution {
+    func findNonMinOrMax(_ nums: [Int]) -> Int {
+        guard nums.count > 2 else { return -1 }
+        var num = nums
+        num.removeAll{$0 == nums.max()! || $0 == nums.min()!}
+        return num.first!
+    }
+}
+
+//---------------------------------------------------
