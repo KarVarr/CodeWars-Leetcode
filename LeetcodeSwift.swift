@@ -2028,3 +2028,25 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+645. Set Mismatch
+*/
+
+class Solution {
+    func findErrorNums(_ nums: [Int]) -> [Int] {
+        var result = [Int]()
+        let setNum = Set(nums)
+        let numbers = Array(1...nums.count)
+        
+        if let n = nums.first(where: { num in nums.filter({ $0 == num }).count > 1 }) {
+            let num = Array(Set(numbers).symmetricDifference(setNum)).first ?? 0
+            result.append(n)
+            result.append(num)
+        }
+        
+        return result
+    }
+}
+
+//---------------------------------------------------
