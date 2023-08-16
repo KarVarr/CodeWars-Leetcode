@@ -2050,3 +2050,25 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+441. Arranging Coins
+*/
+
+class Solution {
+    func arrangeCoins(_ n: Int) -> Int {
+        var stairs = 0
+        var remainingCoins = n
+        var currentRow = 1
+        
+        while remainingCoins >= currentRow {
+            remainingCoins -= currentRow
+            currentRow += 1
+            stairs += 1
+        }
+        
+        return stairs
+    }
+}
+
+//---------------------------------------------------
