@@ -2072,3 +2072,25 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+1089. Duplicate Zeros
+*/
+
+class Solution {
+    func duplicateZeros(_ arr: inout [Int]) {
+        var result = [Int]()
+        for i in arr {
+            if i == 0 {
+                result.append(0)
+                result.append(0)
+            } else {
+                result.append(i)
+            }
+        }
+        let array = Array(result[0..<arr.count])
+        arr = array
+    }
+}
+
+//---------------------------------------------------
