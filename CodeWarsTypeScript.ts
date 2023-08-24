@@ -1310,6 +1310,16 @@ export function isPalindrome(x: string): boolean {
 //7 kyu ============================================
 
 /*
+Breaking chocolate problem
+*/
+
+export function breakChocolate(n: number, m: number): number {
+  return n * m == 0 ? 0 : n * m - 1
+}
+
+//---------------------------------------------------
+
+/*
 Reverse words
 */
 
