@@ -2108,3 +2108,24 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+1486. XOR Operation in an Array
+*/
+
+class Solution {
+    func xorOperation(_ n: Int, _ start: Int) -> Int {
+        var arr = [Int]()
+        var num = 0
+
+        for i in 0..<n {
+            arr.append(start + 2 * i)
+        }
+        
+        arr.map{num ^= $0}
+            
+        return num
+    }
+}
+
+//---------------------------------------------------
