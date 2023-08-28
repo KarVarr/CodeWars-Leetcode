@@ -2129,3 +2129,25 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+2006. Count Number of Pairs With Absolute Difference K
+*/
+
+class Solution {
+    func countKDifference(_ nums: [Int], _ k: Int) -> Int {
+        var result = 0
+
+        for i in 0..<nums.count {
+            for j in i..<nums.count {
+                if abs(nums[i] - nums[j]) == k {
+                    result += 1
+                }
+            }
+        }
+        
+        return result
+    }
+}
+
+//---------------------------------------------------
