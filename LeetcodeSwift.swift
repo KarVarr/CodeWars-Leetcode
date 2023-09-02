@@ -2151,3 +2151,17 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+2643. Row With Maximum Ones
+*/
+
+class Solution {
+    func rowAndMaximumOnes(_ mat: [[Int]]) -> [Int] {
+        let result = mat.map{$0.reduce(0, +)}
+        let max = result.max()!
+        return [result.firstIndex(of: max)!, max]
+    }
+}
+
+//---------------------------------------------------
