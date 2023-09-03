@@ -2165,3 +2165,25 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+1961. Check If String Is a Prefix of Array
+*/
+
+class Solution {
+    func isPrefixString(_ s: String, _ words: [String]) -> Bool {
+        var concatenatedWords = ""
+        for word in words {
+            concatenatedWords += word
+            print(concatenatedWords)
+            if concatenatedWords == s {
+                return true
+            } else if concatenatedWords.count > s.count {
+                return false
+            }
+        }
+        return false
+    }
+}
+
+//---------------------------------------------------
