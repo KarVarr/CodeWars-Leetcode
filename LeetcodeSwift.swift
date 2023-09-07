@@ -2187,3 +2187,35 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+2138. Divide a String Into Groups of Size k
+*/
+
+class Solution {
+    func divideString(_ s: String, _ k: Int, _ fill: Character) -> [String] {
+        var result = [String]()
+        var str = s
+
+        while str.count != 0 {
+            let newWord = String(str.prefix(k))
+            result.append(newWord)
+            str = String(str.dropFirst(k))
+        }
+
+        var last = result.last!
+        
+        if last.count < k {
+            while last.count < k {
+                last = last + String(fill)
+            }
+            
+        }
+        result = result.dropLast()
+        result.append(last)
+      
+        return result
+    }
+}
+
+//---------------------------------------------------
