@@ -2219,3 +2219,29 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+832. Flipping an Image
+*/
+
+class Solution {
+    func flipAndInvertImage(_ image: [[Int]]) -> [[Int]] {
+        var result = [[Int]]()
+
+        for row in image {
+            var reversedArray = [Int]()
+
+            for i in row.reversed() {
+                if i == 1 {
+                   reversedArray.append(0) 
+                } else {
+                    reversedArray.append(1)
+                }
+            }
+            result.append(reversedArray)
+        }
+        return result
+    }
+}
+
+//---------------------------------------------------
