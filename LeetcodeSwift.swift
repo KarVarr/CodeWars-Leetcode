@@ -2245,3 +2245,34 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+1957. Delete Characters to Make Fancy String
+*/
+
+class Solution {
+    func makeFancyString(_ s: String) -> String {
+        var s = Array(s)
+        var result = String(s[0])
+        var count = 1
+
+        for i in 1..<s.count {
+            let current = s[s.index(s.startIndex, offsetBy: i)]
+            let prev = s[s.index(s.startIndex, offsetBy: i - 1)]
+
+            if current == prev {
+                count += 1
+            } else {
+                count = 1
+            }
+
+            if count < 3 {
+                result.append(current)
+            }
+        }
+
+        return result
+    }
+}
+
+//---------------------------------------------------
