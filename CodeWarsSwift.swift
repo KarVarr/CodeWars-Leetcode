@@ -16,6 +16,16 @@ func converter(mpg: Int) -> Double {
 //---------------------------------------------------
 
 /*
+Remove First and Last Character
+*/
+
+func removeFirstAndLast(_ str: String) -> String {
+    return String(str.dropFirst().dropLast())
+}
+
+//---------------------------------------------------
+
+/*
 Function 2 - squaring an argument
 */
 
