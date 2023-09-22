@@ -2276,3 +2276,27 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+561. Array Partition
+*/
+
+class Solution {
+    func arrayPairSum(_ nums: [Int]) -> Int {
+        let sort = nums.sorted()
+        var result = 0
+        var min1 = 0
+        var min2 = 1
+
+        while min2 < sort.count {
+            result += min(sort[min1], sort[min2])
+            min1 += 2
+            min2 += 2
+        }
+        return result 
+    }
+}
+
+//---------------------------------------------------
+
+
