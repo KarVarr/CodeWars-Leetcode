@@ -5,7 +5,7 @@ Leetcode solutions
 /// Easy 
 
 /*
-// 412. Fizz Buzz
+412. Fizz Buzz
 */
 
 class Solution {
@@ -29,7 +29,7 @@ class Solution {
 //--------------------------------------
 
 /*
-// 1672. Richest Customer Wealth
+1672. Richest Customer Wealth
 */
 
 class Solution {
@@ -2298,5 +2298,17 @@ class Solution {
 }
 
 //---------------------------------------------------
+
+/*
+1351. Count Negative Numbers in a Sorted Matrix
+*/
+
+class Solution {
+    func countNegatives(_ grid: [[Int]]) -> Int {
+        grid.flatMap{$0}.filter{$0 < 0}.count
+    }
+}
+
+//--------------------------------------
 
 
