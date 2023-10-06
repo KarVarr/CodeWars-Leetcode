@@ -1310,6 +1310,16 @@ export function isPalindrome(x: string): boolean {
 //7 kyu ============================================
 
 /*
+Simple beads count
+*/
+
+export function countRedBeads(n: number): number {
+  return n > 2 ? (n * 2) - 2 : 0; 
+}
+
+//---------------------------------------------------
+
+/*
 Breaking chocolate problem
 */
 
