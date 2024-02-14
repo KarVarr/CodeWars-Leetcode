@@ -1,6 +1,6 @@
 # CodeWars -> Swift
 
-## My solution in codewars/ Swift
+## My solution in codewars/ Swift - JS - TS 
 #### To search for kata use "search" ctrl+F
 
 ---
